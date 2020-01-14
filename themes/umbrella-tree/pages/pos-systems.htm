@@ -1,0 +1,154 @@
+title = "POS systems"
+url = "/pos-systems"
+layout = "home-layout"
+description = "pos systems page"
+is_hidden = 0
+==
+{% set assetsLink = 'assets/images/'|theme %}
+{% set docsLink = 'assets/docs/'|theme %}
+{% set mediaLink = 'storage/app/media/'%}
+
+<main class="__main equipment">
+    <section class="equipment__header">
+        <article>
+            <h1 class="__title">
+                Sophisticated POS Systems
+            </h1>
+            <h2>
+                All You Need to Run Your Business
+            </h2>
+        </article>
+    </section>
+
+
+    <!-- PRODUCT START -->
+    <section class="equipment__products">
+        <div class="__container">
+            <article class="product-container">
+                <figure>
+                    <img src="{{ 'pos-1.jpg'|media }}" alt="">
+                </figure>
+
+                <div class="product-deets">
+                    <header>
+                        <h1 class="product-title">
+                            PayAnywhere Storefront Countertop Solution
+                        </h1>
+                    </header>
+                    <div class="product-description">
+                        <p>
+                            Transform your storefront with the POS solution that delivers a seamless checkout
+                            experience, plus:
+                        </p>
+                    </div>
+                    <ul>
+                        <li class="deets-item">
+                            <i class="fas fa-check"></i>
+                            <p>
+                                A free tablet, stand with built-in reader, and app
+                            </p>
+                        </li>
+                        <li class="deets-item">
+                            <i class="fas fa-check"></i>
+                            <p>
+                                Pricing as low as 1.69% per swipe
+                            </p>
+                        </li>
+                        <li class="deets-item">
+                            <i class="fas fa-check"></i>
+                            <p>
+                                EMV acceptance
+                            </p>
+                        </li>
+                        <li class="deets-item">
+                            <i class="fas fa-check"></i>
+                            <p>
+                                Detailed, real-time analytics
+                            </p>
+                        </li>
+                        <li class="deets-item">
+                            <i class="fas fa-check"></i>
+                            <p>
+                                Next-day funding
+                            </p>
+                        </li>
+                        <li class="deets-item">
+                            <i class="fas fa-check"></i>
+                            <p>
+                                Bluetooth connectivity
+                            </p>
+                        </li>
+                        <li class="deets-item">
+                            <i class="fas fa-check"></i>
+                            <p>
+                                Cash drawer and printer connectivity
+                            </p>
+                        </li>
+                        <li class="deets-item">
+                            <i class="fas fa-check"></i>
+                            <p>
+                                Integrated online payments with virtual terminal
+                            </p>
+                        </li>
+                        <li class="deets-item">
+                            <i class="fas fa-check"></i>
+                            <p>
+                                Emailable, printable, and textable receipts
+                            </p>
+                        </li>
+                        <li class="deets-item">
+                            <i class="fas fa-check"></i>
+                            <p>
+                                Live customer and technical support by phone, email, and chat
+                            </p>
+                        </li>
+                    </ul>
+                    <div>
+                        <a data-toggle="modal" class="button__standard button__standard--reverse"
+                            href="{{currentPage}}/#modal-possolution-one">Learn More</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="equipment__products equipment__products--reverse">
+        <div class="__container">
+            <article class="product-container">
+                <figure>
+                    <img class="img--cover" src="{{ 'additional-pos-solutions.jpg'|media }}" alt="">
+                </figure>
+
+                <div class="product-deets">
+                    <header>
+                        <h1 class="product-title">
+                            Additional POS Solutions
+                        </h1>
+                    </header>
+                    <div class="product-description">
+                        <p>
+                            Have more specialized needs? Total Merchant Services payment processing is compatible with a
+                            host of additional POS systems. Contact us to learn more.
+                        </p>
+                    </div>
+                    <div>
+                        <a class="button__standard button__standard--reverse"
+                            href="contact">Get Started</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="__content">
+            <h2>
+                Upgrade your operations and grow your business with our cutting-edge POS systems!
+            </h2>
+        </div>
+
+    </section>
+    {% partial 'modals/equipment-modal.htm' 
+    currentLink=modalLinkOne %}
+</main>
+<!-- PRODUCT END-->

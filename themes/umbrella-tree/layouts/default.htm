@@ -1,0 +1,78 @@
+description = "NBMS layout"
+==
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NBMS - {{ this.page.title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="NBMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="OctoberCMS">
+    <link rel="icon" type="image/png" href="{{ 'assets/images/favicon.ico'|theme }}">
+    <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/partials.css'|theme }}" rel="stylesheet">
+    {% if this.page.id != 'home'%}
+    <link href="{{ 'assets/css/secondary.css'|theme }}" rel="stylesheet">
+    {% endif %}
+    <link href="{{ 'assets/css/nbms.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/responsive.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/slick.css'|theme }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800|Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    {% styles %}
+    <script src="https://kit.fontawesome.com/72762a4bc3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    {% if this.page.id == 'contact'%}
+    <style>
+        .section__secondary-cta {
+            display: none;
+        }
+    </style>
+    {% endif %}
+
+    <!-- Header -->
+    <header id="layout-header">
+        {% partial 'site/header' %}
+    </header>
+
+    <!-- Content -->
+    <section id="layout-content">
+        {% page %}
+    </section>
+
+    <!-- cta for secondary -->
+    {% if this.page.id != 'home'%}
+    {% partial 'site/secondary-cta'%}
+    {% endif %}
+
+
+    <!-- cta for secondary -->
+
+    <!-- Footer -->
+    <footer id="layout-footer">
+        {% partial 'site/footer'%}
+    </footer>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="{{ ['assets/vendor/jquery.js',
+                    'assets/vendor/bootstrap.js',
+                    'assets/javascript/app.js',
+                    'assets/javascript/navigation.js',
+                    'assets/javascript/slick.js',]|theme}}"></script>
+    {% framework extras %}
+    {% scripts %}
+</body>
+
+</html>

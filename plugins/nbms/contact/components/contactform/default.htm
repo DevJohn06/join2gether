@@ -1,0 +1,50 @@
+{% set imageUrl = 'assets/images/'|theme %}
+
+<!-- SECTION CONTACT START -->
+<section class="section__contact">
+    <div class="__container">
+        <section class="contact__info">
+            <article>
+                <h1 class="__title">
+                    We'd love to hear </br> from you!
+                </h1>
+            </article>
+            <article class="contact__deets">
+                <div>
+                    <figure>
+                        <img src="{{imageUrl}}/phone.svg" alt="">
+                    </figure>
+                    <a class="contact-link--phone" href="tel:402819444">(402) 819 4444</a>
+                </div>
+                <div>
+                    <figure>
+                        <img src="{{imageUrl}}/mail.svg" alt="">
+                    </figure>
+                    <a class="contact-link--email" href="mailto:lisa@synergypaysolutions.com.com">lisa@synergypaysolutions.com</a>
+                </div>
+            </article>
+        </section>
+        <form id="contact-form" data-request="onSend" action="">
+            <article class="contact-textboxes">
+                <div>
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="text" name="phone" placeholder="Phone">
+                </div>
+            </article>
+            <article class="contact-textarea">
+                <div>
+                    <textarea name="content" placeholder="Message" cols="30" rows="10"></textarea>
+                </div>
+                <button class="button__standard" type="submit">
+                    Submit
+                </button>
+            </article>
+        </form>
+    </div>
+</section>
+<!-- SECTION CONTACT END -->

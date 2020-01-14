@@ -1,0 +1,112 @@
+title = "Other Services"
+url = "/other-services"
+layout = "home-layout"
+description = "Other services Page"
+is_hidden = 0
+==
+{% set assetsLink = 'assets/images/'|theme %}
+{% set docsLink = 'assets/docs/'|theme %}
+{% set mediaLink = 'storage/app/media/'%}
+
+
+<main class="__main equipment">
+    <section class="equipment__header">
+        <article>
+            <h2 class="__title"> 
+                We have a portfolio of products to meet your needs
+            </h2>
+        </article>
+    </section>
+
+
+    <!-- PRODUCT START -->
+    <section class="equipment__products">
+        <div class="__container">
+            <article class="product-container">
+                <figure>
+                    <img src="{{ 'other-1.jpg'|media }}" alt="">
+                </figure>
+
+                <div class="product-deets">
+                    <header>
+                        <h1 class="product-title">
+                            Cash Advance
+                        </h1>
+                    </header>
+                    <div class="product-description">
+                        <p>With a cash advance, your business gets the money it needs to take full advantage of growth
+                            opportunities. This is not a loan, but an advance on future sales. The advance will be paid
+                            back via a small, agreed-upon percentage of daily credit card transactions. No fixed payment
+                            schedule, no restrictions, no collateral, no bank fees – just the cash your business needs.
+                        </p>
+                    </div>
+                    <div>
+                        <a class="button__standard button__standard--reverse" href="contact">Learn More</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="equipment__products equipment__products--reverse">
+        <div class="__container">
+            <article class="product-container">
+                <figure>
+                    <img src="{{ 'other-2.jpg'|media }}" alt="">
+                </figure>
+
+                <div class="product-deets">
+                    <header>
+                        <h1 class="product-title">
+                            Robust Reporting
+                        </h1>
+                    </header>
+                    <div class="product-description">
+                        <p>
+                            No matter your payment solution, you will receive robust transaction reporting via our
+                            Payments Hub. View transaction activity, deposits, customer data, and much more. Access a
+                            virtual terminal to accept online/card-not-present payments and send invoices. You can even
+                            manage disputes, set alerts and order supplies all from the same app!
+                        </p>
+                    </div>
+                    <div>
+                        <a class="button__standard button__standard--reverse" href="contact">Learn More</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="equipment__products">
+        <div class="__container">
+            <article class="product-container">
+                <figure>
+                    <img src="{{ 'other-3.jpg'|media }}" alt="">
+                </figure>
+
+                <div class="product-deets">
+                    <header>
+                        <h1 class="product-title">
+                            Market Intelligence
+                        </h1>
+                    </header>
+                    <div class="product-description">
+                        <p>
+                            Enhance your business with Payments Hub Insights, which helps you track local competitors,
+                            better understand your customers, and protect your reputation by monitoring online reviews.
+                            With easy-to-understand dashboards and message prompts, you’ll be better able to make
+                            decisions, take action, and improve your success.
+                        </p>
+                    </div>
+                    <div class="button__container">
+                        <a class="button__standard button__standard--reverse" href="contact">Learn More</a>
+
+                        <a class="button__standard button__standard--reverse" target="__blank" href="https://www.paymentshubinsights.com/">Watch video</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+<!-- PRODUCT END-->

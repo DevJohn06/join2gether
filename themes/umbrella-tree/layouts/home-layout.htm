@@ -1,0 +1,54 @@
+description = "Home Layout"
+==
+<!DOCTYPE html>
+<html>
+{% partial 'site/head' %}
+<body>
+    {% if this.page.id == 'contact'%}
+    <style>
+        .section__secondary-cta {
+            display: none;
+        }
+    </style>
+    {% endif %}
+
+    <!-- Header -->
+    <header id="layout-header">
+        {% partial 'site/header' %}
+    </header>
+
+    <!-- Content -->
+    <section id="layout-content">
+        {% if this.page.id != 'home'%}
+        {% partial 'secondary/secondary-herobanner'%}
+        {% endif %}
+
+        {% page %}
+    </section>
+
+    <!-- cta for secondary -->
+    {% if this.page.id != 'home'%}
+    {% partial 'site/secondary-cta'%}
+    {% endif %}
+    <!-- cta for secondary -->
+
+    <!-- Footer -->
+    <footer id="layout-footer">
+        {% partial 'site/footer' %}
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+    <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+    <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/slick.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/stickynav.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/navigation.js'|theme }}"></script>
+    {% framework extras %}
+    {% scripts %}
+</body>
+
+</html>

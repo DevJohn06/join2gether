@@ -1,0 +1,33 @@
+title = "High Risk Processing"
+url = "/high-risk-processing"
+layout = "home-layout"
+description = "High Risk Processing  Page."
+is_hidden = 0
+==
+{% set assetsLink = 'assets/images/'|theme %}
+{% set docsLink = 'assets/docs/'|theme %}
+{% set mediaLink = 'storage/app/media/'%}
+
+
+<main class="__main high-risk">
+    <!-- CONTENT ONE START -->
+{% content  "high-risk-processing/content-one.htm"
+imageUrl=assetsLink 
+currentPage=currentPage 
+mediaUrl=mediaLink %}
+<!-- CONTENT ONE END -->
+
+<!-- SUPPORTED SERVICES START -->
+{% content  "high-risk-processing/supported-services.htm"
+imageUrl=assetsLink 
+currentPage=currentPage 
+mediaUrl=mediaLink %}
+<!-- SUPPORTED SERVICES END -->
+
+<!--CONTENT BOTTOM START -->
+{% content  "high-risk-processing/content-bottom.htm"
+imageUrl=assetsLink 
+currentPage=currentPage 
+mediaUrl=mediaLink %}
+<!--CONTENT BOTTOM END -->
+</main>

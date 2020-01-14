@@ -1,0 +1,182 @@
+$colors: (primary: #26437F,
+    secondary: #16a085,
+    c-content: #333,
+    c-title: #656565,
+    primary-hover: rgb(58, 94, 165),
+    secondary-hover: #278673);
+
+$fonts: (main: 'Alata',
+    secondary: 'Raleway'
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
+@function font($font-name) {
+    @return map-get($fonts, $font-name)
+};
+
+.to-center {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.modal-body {
+    padding: 40px;
+
+    button {
+        &.close {
+            font-size: 40px;
+            opacity: 0.6
+        }
+    }
+}
+
+.modal-dialog {
+    max-width: 1000px;
+    width: 100%;
+
+    .modal-open {
+        .modal-title {
+            font-size: 35px;
+        }
+
+        .modal-details {
+            iframe {
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            h3 {
+                padding-bottom: 20px;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+
+        .modal-details {
+            .modal-item-list {
+                .modal-item {
+                    display: grid;
+                    grid-template-columns: max-content auto;
+                    gap: 15px;
+
+                    i {
+                        padding-top: 6px;
+                    }
+
+                    ;
+                }
+
+            }
+
+
+        }
+
+        .button-container {
+            display: grid;
+            justify-content: end;
+
+            &.payanywhere-button {
+                justify-content: start;
+                grid-template-columns: 1fr 1fr;
+
+                .button__standard--reverse {
+                    &:last-child {
+                        justify-self: end;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// NAVIGATION MODAL 
+#navigation-modal {
+    &.modal {
+        background: #fff;
+        text-align: center;
+    }
+
+    .modal-backdrop {
+        display: none;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #fff;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: color(secondary);
+    }
+
+    nav {
+        padding: 0 40px;
+        ul {
+            li {
+                padding-top: 20px;
+                .nav-dropdown {
+                    padding: 20px 0 0 20px;
+                    li {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 20px;
+                font-family: font(main);
+                color: color(secondary) !important;
+                display: block;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #f1f1f1;
+                }
+            }
+        }
+    }
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+
+        a {
+            font-size: 18px;
+        }
+    }
+}

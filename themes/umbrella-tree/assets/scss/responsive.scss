@@ -1,0 +1,713 @@
+$colors: (primary: #26437F,
+    secondary: #16a085,
+    c-content: #333,
+    c-title: #656565,
+    primary-hover: rgb(58, 94, 165),
+    secondary-hover: #278673);
+
+$fonts: (main: 'Alata',
+    secondary: 'Raleway'
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+;
+
+@function font($font-name) {
+    @return map-get($fonts, $font-name)
+}
+
+;
+// GENERAL 
+.mobile-hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 1580px) {
+    .__container {
+        padding: 0 30px;
+    }
+
+    .section__herobanner .__container {
+        padding: 200px 30px 0 30px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    img {
+        width: 100%;
+    }
+}
+
+// PARTIALS
+@media only screen and (max-width:950px) {
+    .section__secondary-cta {
+        padding: 50px 0;
+
+        .__container {
+            article {
+                p {
+                    font-size: 20px;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}
+
+// HOME 
+@media only screen and (max-width:1310px) {
+    .section__specials {
+        .__container {
+            .specials__article {
+                grid-template-columns: auto;
+                justify-items: center;
+                text-align: center;
+
+                figure {
+                    display: none;
+                }
+
+                .button__standard {
+                    text-align: center;
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    footer {
+        .top-footer {
+            .__container {
+                grid-template-columns: auto auto;
+                gap: 50px;
+
+                .footer-social {
+                    justify-self: baseline;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .section__herobanner {
+        video {
+            height: 100%;
+        }
+        .__container {
+            grid-template-columns: 1fr;
+        
+            article  {
+                .heading__herobanner,
+                .subheading__herobanner {
+                    text-align: left;
+                }
+
+                div {
+                    justify-items: start;
+                }
+            }         
+        }
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .section__herobanner {
+        padding: 0px;
+        height: 100%;
+        .__container {
+            padding:50px 30px;
+            article {
+                .heading__herobanner {
+                    font-size: 40px;
+                    line-height: normal;
+                }
+
+                .subheading__herobanner {
+                    margin: 20px 0;
+                    font-size: 30px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .content-one {
+        padding: 50px 0;
+        .__container {
+            gap: 40px;
+            .content-one__article {
+                grid-template-columns: auto;
+                gap: 40px;
+            }
+            .content-one__article--reverse {
+                figure {
+                    grid-row: unset;
+                    grid-column: unset;
+                }
+                .write-up {
+                    grid-row: unset;
+                    grid-column: unset;
+                };
+            }
+        }
+    }
+
+    .section__cta {
+        .__container {
+            padding: 30px;
+            .cta-content {
+                padding: 0px;
+                font-size: 25px;
+                line-height: initial;
+            }
+        }
+    }
+
+    .section__title {
+        font-size: 35px;
+        padding-bottom: 40px;
+    }
+
+    .section__services {
+        padding: 50px 0;
+
+        figure {
+            img {
+                width: auto;
+                height: auto;
+            }
+        }
+
+        .section__title {
+            padding-bottom: 40px;
+        }
+    }
+
+    .section__videos {
+        padding: 50px 0;
+    }
+
+    .section__brands {
+        padding: 0px;
+    }
+
+    .section__contact {
+        padding: 40px 0;
+
+        .__container {
+            .contact__info {
+                grid-template-columns: auto;
+                gap: 25px;
+
+                .__title {
+                    font-size: 36px;
+                    line-height: 1;
+                }
+
+                .contact__deets {
+                    justify-content: start;
+
+                    .contact-link--phone,
+                    .contact-link--email {
+                        font-size: 30px;
+                        line-height: normal;
+                    }
+
+                    figure {
+                        img {
+                            width: 30px;
+                        }
+                    }
+                }
+
+                article {
+                    .section__title {
+                        font-size: 35px;
+                        line-height: normal;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            #contact-form {
+                grid-template-columns: auto;
+                gap: 40px;
+
+                .contact-textarea {
+                    .button__standard {
+                        width: 100%;
+                    }
+                }
+
+                .contact-textboxes {
+                    display: grid;
+                    gap: 40px;
+                }
+            }
+        }
+    }
+
+    .section__about {
+        .about--content {
+            font-size: 20px;
+            line-height: 2;
+        }
+    }
+
+    .top-footer {
+        .__container {
+            figure {
+                img {
+                    max-width: 350px;
+                }
+            }
+        }
+    }
+}
+
+// end of w--950px
+@media only screen and (max-width:870px) {
+    .section__services {
+        .service-item {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+
+            .button__standard {
+                justify-self: center;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:800px) {
+    footer {
+        .top-footer {
+            .__container {
+                grid-template-columns: auto;
+                gap: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:650px) {
+    footer {
+        .bottom-footer {
+            .__container {
+                grid-template-columns: auto;
+                justify-items: start;
+                gap: 10px;
+
+                .footer-copyright {
+                    justify-self: start;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .section__contact {
+        .__container {
+            .contact__info {
+                .contact__deets {
+                    div {
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .section__contact {
+        .__container {
+            .contact__info {
+                article {
+                    .section__title {
+                        font-size: 25px;
+                    }
+                }
+
+                .contact__deets {
+
+                    .contact-link--phone,
+                    .contact-link--email {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    .section__services {
+        .services-container {
+            grid-template-columns: auto;
+        }
+    }
+
+    .section__videos {
+        .video_container {
+            iframe {
+                height: 200px;
+            }
+        }
+    }
+}
+
+// SECONDARY PAGES 
+@media only screen and (max-width:950px) {
+    .__title {
+        font-size: 30px;
+    }
+
+    .__content-text {
+        font-size: 20px;
+        line-height: 2;
+    }
+}
+
+//NAVIGATION
+@media only screen and (max-width:1050px) {
+    .header__navigation {
+        position: relative;
+        .__container {
+            grid-template-columns: auto;
+
+            nav {
+                display: none;
+            }
+        }
+
+        .logo-container {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 90px;
+            align-items: center;
+
+            .mobile-hidden {
+                display: block;
+
+                .fa-bars {
+                    font-size: 30px;
+                    color:color(secondary);
+                }
+            }
+
+            a {
+                color:color(secondary);
+                img {
+                    width: 100%;
+                    max-width: 120px;
+                }
+            }
+        }
+    }
+}
+
+// ABOUT
+
+@media only screen and (max-width:1580px) {
+    .about__process {
+        .__container {
+            figure {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .about__content-two {
+        .about__servicelist {
+            grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+            gap: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .content-one__block-one {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 20px;
+
+        article {
+            grid-row: 2;
+        }
+    }
+
+    .about__process {
+        display: none;
+    }
+
+    .about__content-two {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .about__download-links {
+        .__container {
+            .links-itemlist {
+                grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+            }
+        }
+    }
+}
+
+//CASH DISCOUNT
+
+@media only screen and (max-width: 1220px) {
+    .cash-discount {
+        .__container {
+            .__content-one-content {
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                gap: 50px;
+
+                article {
+                    grid-row: 2;
+                }
+
+                figure {
+                    img {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .__content-one-content--reverse {
+                article {
+                    grid-column: 1;
+                }
+
+                figure {
+                    grid-column: 1;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .cashDiscount__video {
+        .video-text-container {
+            padding: 20px 0 50px;
+
+            .video-text {
+                font-size: 20px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+// EQUIPMENT PAGES
+@media only screen and (max-width:1120px) {
+    .equipment {
+        .equipment__products {
+            .__container {
+                .product-container {
+                    display: block;
+
+                    figure {
+                        text-align: center;
+                        padding-bottom: 30px;
+
+                        img {
+                            width: 100%;
+                            max-width: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .to-center {
+        display: block;
+    }
+
+    .__main {
+        .modal-dialog {
+            margin: 0px;
+            padding: 20px;
+
+            .modal-open {
+                .button-container {
+                    grid-template-columns: auto;
+                    justify-content: start;
+                }
+            }
+        }
+
+        &.equipment {
+            .equipment__products {
+                .__container {
+                    .product-deets {
+                        div {
+                            justify-content: start;
+
+                            +.button__container {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// HIGH RISK SOLUTION
+
+@media only screen and (max-width:1220px) {
+    .high-risk {
+        .__content-one {
+            .__container {
+                .__content-one-content {
+                    grid-template-columns: auto;
+                }
+
+                article {
+                    grid-row: 2;
+                }
+
+                figure {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .highRisk__supported-services {
+        .__container {
+            .supported-service-list {
+                grid-template-columns: auto;
+            }
+        }
+    }
+}
+
+//LOW RISK SOLUTION 
+@media only screen and (max-width:1220px) {
+    .lowRisk {
+        .content-one {
+            .__container {
+                grid-template-columns: auto;
+                gap: 50px;
+
+                figure {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//CANNABIS INDUSTRY
+
+@media only screen and (max-width: 1050px) {
+    .cannabisIndustry {
+        .content-three {
+            .__container {
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                gap: 30px;
+
+                article {
+                    grid-row: 2;
+                }
+
+                figure {
+                    grid-row: 1;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .cannabisIndustry {
+        .content-two {
+            .__container {
+                .cbd-list {
+                    grid-template-columns: auto;
+                }
+            }
+        }
+    }
+}
+
+// SHORT TERM LENDERS 
+
+@media only screen and (max-width: 1580px) {
+    .shortTerm {
+        .shortTerm__content-one {
+            .__container {
+                .shortTerm__process {
+                    .process-itemlist {
+                        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .shortTerm {
+        .shortTerm__service {
+            .__container {
+                article {
+                    grid-template-columns: auto;
+                    gap: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// PRIVACY 
+
+
+@media only screen and (max-width: 1045px) {
+    .termsConditions {
+        .__container {
+            .download-links {
+                grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+                justify-content: center;
+            }
+        }
+    }
+}

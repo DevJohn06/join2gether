@@ -1,0 +1,26 @@
+<head>
+    <meta charset="utf-8">
+    <title>Synergy Pay Solutions - {{ this.page.title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="4Corp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="OctoberCMS">
+    <link rel="icon" type="image/png" href="{{ 'favicon.ico'|media }}">
+
+    <link href="{{ [
+        'assets/dist/css/vendor.css',
+        'assets/dist/css/theme.css',
+        'assets/dist/css/partials.min.css',
+        'assets/dist/css/main.min.css',
+        'assets/dist/css/slick.css',
+    ]|theme }}" rel="stylesheet">
+    {% if this.page.id != 'home'%}
+    <link href="{{ 'assets/dist/css/secondary.min.css'|theme }}" rel="stylesheet">
+    {% endif %}
+    <link href="{{ 'assets/dist/css/responsive.min.css'|theme }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alata|Raleway:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    {% styles %}
+    <script src="https://kit.fontawesome.com/72762a4bc3.js" crossorigin="anonymous"></script>
+</head>

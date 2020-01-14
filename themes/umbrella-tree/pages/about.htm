@@ -1,0 +1,40 @@
+title = "About Us"
+url = "/about"
+layout = "home-layout"
+meta_title = "About Page"
+meta_description = "We are a technology company in the payments space delivering superior service"
+is_hidden = 0
+==
+{% set assetsLink = 'assets/images/'|theme %}
+{% set docsLink = 'assets/docs/'|theme %}
+{% set currentPage = this.page.title %}
+
+<main class="__main page-aboutus">
+
+    {# CONTENT 1 START #}
+    {% content "about/content-one.htm" 
+    imageUrl=assetsLink 
+    currentPage=currentPage %}
+    {# CONTENT 1 END #}
+
+    {# CONTENT 2 START #}
+    {% content "about/content-two.htm" 
+    imageUrl=assetsLink 
+    currentPage=currentPage %}
+    {# CONTENT 2 END #}
+
+    <section class="about__process">
+        <div class="__container">
+            <figure>
+                <img src="{{assetsLink}}/secondary/process.jpg" alt="">
+            </figure>
+        </div>
+    </section>
+
+    {# DOWNLOAD-LINK START #}
+    {% content "about/download-links.htm" 
+    imageUrl=assetsLink
+    docsUrl=docsLink 
+    currentPage=currentPage %}
+    {# DOWNLOAD-LINK END #}
+</main>

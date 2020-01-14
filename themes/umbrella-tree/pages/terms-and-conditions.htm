@@ -1,0 +1,61 @@
+title = "terms and conditions"
+url = "/terms-and-conditions"
+layout = "home-layout"
+is_hidden = 0
+==
+{% set assetsLink = 'assets/images/'|theme %}
+{% set docsLink = 'assets/docs/'|theme %}
+{% set mediaLink = 'storage/app/media/'%}
+{% set currentPage = this.page.title %}
+
+
+<section class="termsConditions">
+    <div class="__container">
+        <header>
+            <h1 class="__title">
+                To understand more about our terms, conditions, and policies. Download these references!
+            </h1>
+        </header>
+
+        <section class="download-links">
+            <article>
+                <header>
+                    <h1>
+                        Compliance Policy
+                    </h1>
+
+                </header>
+                <div>
+                    <a class="button__standard" target="_blank" href="{{ 'SPS-Compliance-Policy.pdf'|media }}">
+                        Download
+                    </a>
+                </div>
+            </article>
+            <article>
+                <header>
+                    <h1>
+                       Info Security Policy
+                    </h1>
+
+                </header>
+                <div>
+                    <a class="button__standard" target="_blank" href="{{ 'SPS-Info-Sec-Policy.pdf'|media }}">
+                       Download
+                    </a>
+                </div>
+            </article>
+            <article>
+                <header>
+                    <h1>
+                        Privacy Policy
+                    </h1>
+                </header>
+                <div>
+                    <a class="button__standard" target="_blank" href="{{ 'SPS-Privacy-Policy.pdf'|media }}">
+                        Download
+                    </a>
+                </div>
+            </article>
+        </section>
+    </div>
+</section>

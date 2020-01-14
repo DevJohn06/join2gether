@@ -1,0 +1,82 @@
+<!-- Nav -->
+<!-- <div class="filler">
+</div> -->
+{% partial 'modals/navigation-modal.htm' %}
+<header id="navbar" class="header__navigation">
+    <div class="__container">
+        <figure class="logo-container">
+            <a href="{{ 'home'|page }}">
+                <img src="{{'logo.png'|media}}" alt="">
+            </a>
+            <div class="mobile-hidden">
+                <a href="#navigation-modal" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </figure>
+        <nav>
+            <ul>
+                <li class="{% if this.page.id == 'home' %}link-active{% endif %}">
+                    <a href="{{ 'home'|page }}">
+                        Home
+                    </a>
+                </li>
+                <li class="{% if this.page.id == 'about' %}link-active{% endif %}">
+                    <a href="{{ 'about'|page }}">
+                        About
+                    </a>
+                </li>
+                <li class="{% if this.page.id == 'cash-discount' %}link-active{% endif %}">
+                    <a href="{{ 'cash-discount'|page }}">
+                        Cash Discount
+                    </a>
+                </li>
+                <li class="has-dropdown {% if (this.page.id == 'terminals-and-readers') or (this.page.id == 'pos-systems') or (this.page.id == 'marketing-solutions') or (this.page.id == 'other-services') %}link-active{% endif %}">
+                    <a href="javascript:function() { return false; }">
+                        Equipment
+                    </a>
+                    <ul class="nav-dropdown" class="">
+                        <li>
+                            <a href="{{ 'terminals-and-readers'|page }}">Terminals and Readers</a>
+                        </li>
+                        <li>
+                            <a href="{{ 'pos-systems'|page }}">POS Systems</a>
+                        </li>
+                        <li>
+                            <a href="{{'marketing-solutions'|page }}">Marketing Solutions</a>
+                        </li>
+                        <li>
+                            <a href="{{'other-services'|page }}">Other Services</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-dropdown {% if this.page.id in ['high-risk-processing','low-risk-solution','cannabis-industry-process','short-term-lenders']%}link-active{% endif %}">
+                    <a href="javascript:function() { return false; }">
+                        Processing Solutions
+                    </a>
+                    <ul class="nav-dropdown" class="">
+                        <li>
+                            <a href="{{ 'high-risk-processing'|page }}">
+                                High Risk Processing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ 'low-risk-solution'|page }}">Low Risk Processing</a>
+                        </li>
+                        <li>
+                            <a href="{{ 'cannabis-industry-process'|page }}">Cannabis Industry Process</a>
+                        </li>
+                        <li>
+                            <a href="{{ 'short-term-lenders'|page }}">Short Term Lenders</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{{ 'contact'|page }}">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

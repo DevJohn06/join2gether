@@ -1,0 +1,159 @@
+.to-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-body {
+  padding: 40px;
+}
+
+.modal-body button.close {
+  font-size: 40px;
+  opacity: 0.6;
+}
+
+.modal-dialog {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.modal-dialog .modal-open .modal-title {
+  font-size: 35px;
+}
+
+.modal-dialog .modal-open .modal-details iframe {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.modal-dialog .modal-open .modal-details h3 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.modal-dialog .modal-open .modal-details .modal-item-list .modal-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content auto;
+      grid-template-columns: -webkit-max-content auto;
+      grid-template-columns: max-content auto;
+  gap: 15px;
+}
+
+.modal-dialog .modal-open .modal-details .modal-item-list .modal-item i {
+  padding-top: 6px;
+}
+
+.modal-dialog .modal-open .button-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.modal-dialog .modal-open .button-container.payanywhere-button {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.modal-dialog .modal-open .button-container.payanywhere-button .button__standard--reverse:last-child {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+#navigation-modal.modal {
+  background: #fff;
+  text-align: center;
+}
+
+#navigation-modal .modal-backdrop {
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #fff;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav nav {
+  padding: 0 40px;
+}
+
+.sidenav nav ul li {
+  padding-top: 20px;
+}
+
+.sidenav nav ul li .nav-dropdown {
+  padding: 20px 0 0 20px;
+}
+
+.sidenav nav ul li .nav-dropdown li {
+  padding-bottom: 20px;
+}
+
+.sidenav nav ul .a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav nav ul .a:hover {
+  color: #f1f1f1;
+}
+
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=partials.css.map */

@@ -1,0 +1,6 @@
+plugin:
+    name: 'nbms.contact::lang.plugin.name'
+    description: 'nbms.contact::lang.plugin.description'
+    author: nbms
+    icon: oc-icon-envelope
+    homepage: ''
