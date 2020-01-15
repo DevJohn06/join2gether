@@ -640,9 +640,18 @@ footer {
 
         .__container {
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto;
             align-self: center;
             gap: 40px;
+
+        .footer-terms {
+            a{
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
 
             .bottom-footer-writeup {
                 justify-self: center;
