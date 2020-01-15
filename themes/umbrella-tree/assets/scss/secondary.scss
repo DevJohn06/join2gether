@@ -1,18 +1,17 @@
-$colors: (primary: #26437F,
-    secondary:#00b894,
-    content: #333,
+$colors: (primary: #802151,
+    secondary: #12CBC4,
+    c-content: #333,
     c-title: #656565,
-    primary-hover: rgb(58, 94, 165),
-    secondary-hover: rgb(58, 94, 165));
+    primary-hover: rgb(156, 69, 116),
+    secondary-hover: #297771);
 
-$fonts: (main: 'Alata',
+$fonts: (main: 'Montserrat',
     secondary: 'Raleway'
 );
 
 @function color($color-name) {
     @return map-get($colors, $color-name)
 }
-
 ;
 
 @function font($font-name) {
