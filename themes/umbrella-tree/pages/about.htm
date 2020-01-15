@@ -11,22 +11,43 @@ is_hidden = 0
 
 <main class="__main page-aboutus">
 
-    {# CONTENT 1 START #}
-    {% content "about/content-one.htm" 
-    imageUrl=assetsLink 
-    currentPage=currentPage %}
-    {# CONTENT 1 END #}
-
-    {# CONTENT 2 START #}
-    {% content "about/content-two.htm" 
-    imageUrl=assetsLink 
-    currentPage=currentPage %}
-    {# CONTENT 2 END #}
-
-    <section class="about__process">
+    <section class="__section page-aboutus--intro">
         <div class="__container">
+            <article class="jumbo-text-container">
+                <h1 class="__title">
+                    Imagine your business with a partner who is truly different.
+                </h1>
+            </article>
+            <article class="__content-text">
+                Join2gether brings together unmatched
+                talent and all the tools and capabilities to
+                power the greatest customer engagement.
+            </article>
+        </div>
+    </section>
+
+    <section class="__section page-aboutus--whoarewe">
+        <div class="__container">
+            <article>
+                <h1 class="__title">
+                    Who are we?
+                </h1>
+                <p class="__content-text">
+                    It’s pretty simple, really. We’re a customer experience company that does one thing, we make lives
+                    better. One interaction at a time for our
+                    clients, customers, colleagues and communities. And we do it by relying on our people and leveraging
+                    the process, tools and technologies needed
+                    to deliver an insanely great customer experience.
+                    </br></br>
+                    We are globally competitive to provide outsourcing services. One of our services is effective and
+                    concise customer care and support for
+                    our clients. We believe there is no “one size fits all” solution so we customize and optimize our
+                    services to our clients. This is to
+                    ensure that every need and demand is given an effective and appropriate solution.
+                </p>
+            </article>
             <figure>
-                <img src="{{assetsLink}}/secondary/process.jpg" alt="">
+                <img src="{{'about-us-whoarewe.jpg'|media}}" alt="">
             </figure>
         </div>
     </section>
