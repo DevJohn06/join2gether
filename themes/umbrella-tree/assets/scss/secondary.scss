@@ -180,11 +180,12 @@ $fonts: (main: 'Montserrat',
                     }
                 }
 
-                .service-item--reverse { 
+                .service-item--reverse {
                     div {
                         grid-column: 2;
                         grid-row: 1;
                     }
+
                     figure {
                         grid-column: 1;
                         grid-row: 1;
@@ -318,6 +319,67 @@ $fonts: (main: 'Montserrat',
             .links-item {
                 h5 {
                     font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// ===========================
+// CLIENTS PAGE
+
+.page-about-clients {
+    .page-clients--one {
+        .__container {
+            h2 {
+                text-align: left;
+                padding: 0 0 20px;
+            }
+
+            ul {
+                li {
+                    padding: 0 0 30px;
+
+                    h2 {
+                        font-size: 35px;
+                        padding: 0;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .client-item-list {
+        .__container {
+            .client-banner {
+                background-repeat: none;
+                background-size: cover;
+                background-position: bottom;
+                padding: 100px 30px;
+                position: relative;
+                margin-bottom: 30px;
+
+                &:before {
+                    content: "";
+                    background: rgba(0, 0, 0, 0.6);
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .__title {
+                    position: relative;
+                    z-index: 999;
+                    color: #fff;
+                }
+            }
+
+            .client-item {
+                .__content-text {
                     font-weight: bold;
                 }
             }
