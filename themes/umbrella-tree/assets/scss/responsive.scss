@@ -20,6 +20,7 @@ $fonts: (main: 'Alata',
 }
 
 ;
+
 // GENERAL 
 .mobile-hidden {
     display: none;
@@ -95,35 +96,69 @@ $fonts: (main: 'Alata',
     }
 }
 
+// HEROBANNER
 @media only screen and (max-width:1050px) {
     .section__herobanner {
+        padding: 0px;
+        height: 100%;
+
         video {
             height: 100%;
         }
+
         .__container {
             grid-template-columns: 1fr;
-        
-            article  {
+            padding: 0 30px;
+
+            article {
+                padding: 50px;
+                .heading__herobanner {
+                    font-size: 80px;
+                }
+
+                .subheading__herobanner {
+                    font-size: 65px;
+                }
+
                 .heading__herobanner,
                 .subheading__herobanner {
-                    text-align: left;
+                    text-align: center;
                 }
 
                 div {
                     justify-items: start;
                 }
-            }         
+            }
         }
     }
+
+    .content-one {
+        .__container {
+            .content-one__article {
+                .write-up {
+                    grid-template-columns: auto;
+                    gap: 20px;
+
+                    .__title {
+                        font-size: 100px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width:950px) {
     .section__herobanner {
         padding: 0px;
         height: 100%;
+
         .__container {
-            padding:50px 30px;
+            padding: 50px 0px;
+
             article {
+                padding: 0px;
                 .heading__herobanner {
                     font-size: 40px;
                     line-height: normal;
@@ -140,21 +175,27 @@ $fonts: (main: 'Alata',
 
     .content-one {
         padding: 50px 0;
+
         .__container {
             gap: 40px;
+
             .content-one__article {
                 grid-template-columns: auto;
                 gap: 40px;
             }
+
             .content-one__article--reverse {
                 figure {
                     grid-row: unset;
                     grid-column: unset;
                 }
+
                 .write-up {
                     grid-row: unset;
                     grid-column: unset;
-                };
+                }
+
+                ;
             }
         }
     }
@@ -162,10 +203,11 @@ $fonts: (main: 'Alata',
     .section__cta {
         .__container {
             padding: 30px;
+
             .cta-content {
                 padding: 0px;
-                font-size: 25px;
-                line-height: initial;
+                font-size: 20px;
+                line-height: 2;
             }
         }
     }
@@ -273,27 +315,45 @@ $fonts: (main: 'Alata',
 }
 
 // end of w--950px
-@media only screen and (max-width:870px) {
-    .section__services {
-        .service-item {
-            display: grid;
-            justify-content: center;
-            text-align: center;
-
-            .button__standard {
-                justify-self: center;
-            }
-        }
-
-    }
-}
-
 @media only screen and (max-width:800px) {
     footer {
         .top-footer {
             .__container {
                 grid-template-columns: auto;
                 gap: 30px;
+                
+                figure {
+                    justify-self: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .content-one {
+        .__container {
+            .content-one__article {
+                .write-up {
+                    .__title { 
+                        font-size: 65px;
+                    }
+                    div {
+                        .__content-text {
+                            font-size: 15px;
+                            padding-top: 0;
+                            line-height: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section__cta {
+        .__container {
+            .cta-content {
+                font-size: 15px;
             }
         }
     }
@@ -314,6 +374,8 @@ $fonts: (main: 'Alata',
         }
     }
 }
+
+
 
 @media only screen and (max-width:400px) {
     .section__contact {
@@ -382,6 +444,7 @@ $fonts: (main: 'Alata',
 @media only screen and (max-width:1050px) {
     .header__navigation {
         position: relative;
+
         .__container {
             grid-template-columns: auto;
 
@@ -401,12 +464,13 @@ $fonts: (main: 'Alata',
 
                 .fa-bars {
                     font-size: 30px;
-                    color:color(secondary);
+                    color: color(secondary);
                 }
             }
 
             a {
-                color:color(secondary);
+                color: color(secondary);
+
                 img {
                     width: 100%;
                     max-width: 120px;
