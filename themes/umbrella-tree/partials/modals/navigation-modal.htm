@@ -7,21 +7,53 @@
                     Home
                 </a>
             </li>
-            <li class="{% if this.page.id == 'about' %}link-active{% endif %}">
+            <li class="has-dropdown {% if this.page.id in ['about','about-us-services'] %}link-active{% endif %}">
                 <a href="{{ 'about'|page }}">
                     About
                 </a>
+                <ul class="nav-dropdown">
+                    <li>
+                        <a href="{{'about'|page}}">
+                            Who are we
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{'about/clients'|page}}">
+                            Clients
+                        </a>
+                    </li>
+                </ul>
             </li>
-            <li class="{% if this.page.id == 'cash-discount' %}link-active{% endif %}">
-                <a href="{{ 'cash-discount'|page }}">
-                    Cash Discount
+            <li class="{% if this.page.id == 'services' %}link-active{% endif %}">
+                <a href="{{ 'services'|page }}">
+                    Services
                 </a>
             </li>
-            <li class="has-dropdown">
-                <a class="button--disabled" href="javascript:void(0)">
-                    Equipment
+            <li class="has-dropdown {% if this.page.id in ['high-risk-processing','low-risk-solution','cannabis-industry-process','short-term-lenders',
+            'terminals-and-readers','pos-systems','marketing-solutions','other-services','cash-discount']%}link-active{% endif %}">
+                <a href="javascript:function() { return false; }">
+                    Processing Solutions
                 </a>
-                <ul class="nav-dropdown" class="">
+                <ul class="nav-dropdown">
+                    <li>
+                        <a href="{{'cash-discount'|page}}">
+                            Cash Discount
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ 'high-risk-processing'|page }}">
+                            High Risk Processing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ 'low-risk-solution'|page }}">Low Risk Processing</a>
+                    </li>
+                    <li>
+                        <a href="{{ 'cannabis-industry-process'|page }}">Cannabis Industry Process</a>
+                    </li>
+                    <li>
+                        <a href="{{ 'short-term-lenders'|page }}">Short Term Lenders</a>
+                    </li>
                     <li>
                         <a href="{{ 'terminals-and-readers'|page }}">Terminals and Readers</a>
                     </li>
@@ -33,27 +65,6 @@
                     </li>
                     <li>
                         <a href="{{'other-services'|page }}">Other Services</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="has-dropdown">
-                <a href="javascript:void(0)">
-                    Processing Solutions
-                </a>
-                <ul class="nav-dropdown" class="">
-                    <li>
-                        <a href="{{ 'high-risk-processing'|page }}">
-                            High Risk Processing
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ 'low-risk-solutions'|page }}">Low Risk Processing</a>
-                    </li>
-                    <li>
-                        <a href="{{ 'cannabis-industry-process'|page }}">Cannabis Industry Process</a>
-                    </li>
-                    <li>
-                        <a href="{{ 'short-term-lenders'|page }}">Short Term Lenders</a>
                     </li>
                 </ul>
             </li>
