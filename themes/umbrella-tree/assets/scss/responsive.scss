@@ -36,6 +36,12 @@ $fonts: (main: 'Alata',
     }
 }
 
+@media only screen and (max-width:1050px) {
+    .__section {
+        padding: 40px 0;
+    }
+}
+
 @media only screen and (max-width:950px) {
     img {
         width: 100%;
@@ -112,6 +118,7 @@ $fonts: (main: 'Alata',
 
             article {
                 padding: 50px;
+
                 .heading__herobanner {
                     font-size: 80px;
                 }
@@ -159,6 +166,7 @@ $fonts: (main: 'Alata',
 
             article {
                 padding: 0px;
+
                 .heading__herobanner {
                     font-size: 40px;
                     line-height: normal;
@@ -321,7 +329,7 @@ $fonts: (main: 'Alata',
             .__container {
                 grid-template-columns: auto;
                 gap: 30px;
-                
+
                 figure {
                     justify-self: center;
                 }
@@ -335,9 +343,10 @@ $fonts: (main: 'Alata',
         .__container {
             .content-one__article {
                 .write-up {
-                    .__title { 
+                    .__title {
                         font-size: 65px;
                     }
+
                     div {
                         .__content-text {
                             font-size: 15px;
@@ -482,52 +491,106 @@ $fonts: (main: 'Alata',
 
 // ABOUT
 
-@media only screen and (max-width:1580px) {
-    .about__process {
-        .__container {
-            figure {
-                img {
-                    width: 100%;
+@media only screen and (max-width: 1050px) {
+    .page-aboutus {
+        .page-aboutus--intro {
+            .__container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        .page-aboutus--whoarewe {
+            .__container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+
+                article {
+                    grid-row: 2;
+                }
+
+                figure {
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        max-width: 100%;
+                    }
                 }
             }
         }
     }
 }
 
-@media only screen and (max-width: 1240px) {
-    .about__content-two {
-        .about__servicelist {
-            grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-            gap: 40px;
-        }
-    }
-}
+
 
 @media only screen and (max-width: 950px) {
-    .content-one__block-one {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        gap: 20px;
+    .page-aboutus {
+        .page-aboutus--intro {
+            .__container {
+                .jumbo-text-container {
+                    .__title {
+                        font-size: 50px;
+                        line-height: 1.2;
+                    }
+                }
 
-        article {
-            grid-row: 2;
+                .__content-text {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        .page-aboutus--whoarewe {
+            .__container {
+                article {
+                    .__title {
+                         font-size: 50px;
+                    }
+                }
+            }
         }
     }
-
-    .about__process {
-        display: none;
-    }
-
-    .about__content-two {
-        padding: 0;
-    }
 }
+
 
 @media only screen and (max-width: 650px) {
     .about__download-links {
         .__container {
             .links-itemlist {
                 grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .page-aboutus {
+        .page-aboutus--intro {
+            .__container {
+                .jumbo-text-container {
+                    .__title {
+                        font-size: 30px;
+                    }
+                }
+
+                .__content-text {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .page-aboutus--whoarewe {
+            .__container {
+                article {
+                    .__title {
+                         font-size: 40px;
+                         padding: 0px;
+                    }
+
+                    .__content-text {
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }
