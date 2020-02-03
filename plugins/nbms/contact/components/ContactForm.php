@@ -27,7 +27,7 @@ class ContactForm extends ComponentBase
 
                 Mail::send('nbms.contact::mail.message', $vars, function($message) {
 
-                $message->to('info@nbmsinc.com', 'Admin Person');
+                $message->to('info@join2gether.com', 'Admin Person');
 
                 $message->subject('New message from website contact form');
             });

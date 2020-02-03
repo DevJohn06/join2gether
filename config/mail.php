@@ -57,7 +57,7 @@ return [
 
     // 'from' => ['address' => 'info@nbmsinc.com', 'name' => 'NBMS WEBSITE'],
 
-    'from' => ['address' => 'john@join2gether.com', 'name' => 'NBMS WEBSITE'],
+    'from' => ['address' => 'john@join2gether.com', 'name' => 'Join2gether WEBSITE'],
     
     /*
     |--------------------------------------------------------------------------
