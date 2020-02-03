@@ -1,0 +1,137 @@
+// NAVIGATION START 
+.header__navigation {
+    padding: 25px 0;
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+
+    .__container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    nav {
+        justify-self: end;
+
+        ul {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        li:not(:last-of-type) {
+            padding-right: 30px;
+        }
+
+        li.link-active a {
+            color: color(primary);
+        }
+
+        .has-dropdown {
+            &.link-active {
+                a {
+                    color: color(primary);
+                }
+            }
+        }
+
+        li.has-dropdown {
+            .nav-dropdown {
+                display: none;
+                position: absolute;
+                top: 25px;
+                padding: 10px 20px;
+                background: #fff;
+                border-top: 1px solid #bbb;
+                border-right: 1px solid #bbb;
+                border-bottom: 1px solid #bbb;
+                border-left: 1px solid #bbb;
+                box-shadow: 1px 1px 6px #666;
+                z-index: 1;
+                width: auto;
+                transition: 0.5s;
+
+                li {
+                    display: block;
+
+                    a {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 40px;
+                        color: #000;
+                    }
+
+                    a:hover {
+                        color: color(primary);
+                    }
+                }
+            }
+        }
+
+        li.has-dropdown:hover>.nav-dropdown {
+            display: block;
+            z-index: 999;
+        }
+
+        li {
+            display: inline-block;
+
+            a {
+                font-family: font(main);
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                &:hover,
+                &:active {
+                    color: color(primary);
+                }
+            }
+        }
+    }
+
+    .logo-container {
+        margin: 0px;
+
+        img {
+            max-width: 150px;
+        }
+    }
+}
+
+// STICKY NAV 
+$nav-height: 3em;
+
+.filler {
+    height: 40px;
+    position: fixed;
+}
+
+.navbar-fixed {
+    position: fixed !important;
+    top: -($nav-height);
+    padding: 10px 0 !important;
+    background: #fff !important;
+
+    nav {
+        ul {
+            li {
+                a {
+                    color: color(c-content);
+                    text-shadow: none;
+                }
+            }
+        }
+    }
+
+
+    .logo-container {
+        img {
+            max-width: 130px !important;
+        }
+    }
+}
