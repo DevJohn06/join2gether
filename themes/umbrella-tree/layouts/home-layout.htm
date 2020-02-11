@@ -3,12 +3,14 @@ description = "Home Layout"
 <!DOCTYPE html>
 <html>
 {% partial 'site/head' %}
+
 <body>
     {% if this.page.id == 'contact'%}
     <style>
         .section__secondary-cta {
             display: none;
         }
+
     </style>
     {% endif %}
 
@@ -17,10 +19,14 @@ description = "Home Layout"
         .header__navigation {
             position: relative;
         }
+
+        .header__navigation nav ul li a {
+            color: #333;
+        }
     </style>
     {% endif %}
 
-    
+
 
     <!-- Header -->
     <header id="layout-header">
