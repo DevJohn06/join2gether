@@ -659,8 +659,8 @@ footer .top-footer .__container .footer-social .footer-text {
 footer .top-footer .__container .footer-social figure {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
   -webkit-column-gap: 35px;
           column-gap: 35px;
 }

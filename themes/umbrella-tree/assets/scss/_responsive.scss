@@ -1,25 +1,3 @@
-$colors: (primary: #26437F,
-    secondary: #16a085,
-    c-content: #333,
-    c-title: #656565,
-    primary-hover: rgb(58, 94, 165),
-    secondary-hover: #278673);
-
-$fonts: (main: 'Alata',
-    secondary: 'Raleway'
-);
-
-@function color($color-name) {
-    @return map-get($colors, $color-name)
-}
-
-;
-
-@function font($font-name) {
-    @return map-get($fonts, $font-name)
-}
-
-;
 
 // GENERAL 
 .mobile-hidden {
@@ -97,7 +75,6 @@ $fonts: (main: 'Alata',
                     justify-self: baseline;
                 }
             }
-
         }
     }
 }
