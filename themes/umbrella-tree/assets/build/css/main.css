@@ -224,7 +224,7 @@ ul {
 
 .navbar-fixed {
   position: fixed !important;
-  top: -3em;
+  top: 0;
   padding: 10px 0 !important;
   background: #fff !important;
 }
@@ -1985,10 +1985,10 @@ footer .bottom-footer .__container .footer-copyright {
   }
   .header__navigation .logo-container .mobile-hidden .fa-bars {
     font-size: 30px;
-    color: #16a085;
+    color: #12CBC4;
   }
   .header__navigation .logo-container a {
-    color: #16a085;
+    color: #12CBC4;
   }
   .header__navigation .logo-container a img {
     width: 100%;

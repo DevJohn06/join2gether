@@ -104,7 +104,7 @@
 }
 
 // STICKY NAV 
-$nav-height: 3em;
+// $nav-height: 3em;
 
 .filler {
     height: 40px;
@@ -113,7 +113,7 @@ $nav-height: 3em;
 
 .navbar-fixed {
     position: fixed !important;
-    top: -($nav-height);
+    top: 0;
     padding: 10px 0 !important;
     background: #fff !important;
 
