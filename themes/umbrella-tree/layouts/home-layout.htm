@@ -28,11 +28,6 @@ description = "Home Layout"
 
 
 
-    <!-- Header -->
-    <header id="layout-header">
-        {% partial 'site/header' %}
-    </header>
-
     <!-- Content -->
     <section id="layout-content">
         {% if this.page.id != 'home'%}
@@ -59,9 +54,7 @@ description = "Home Layout"
     <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="{{ 'assets/javascript/slick.js'|theme }}"></script>
-    <script type="text/javascript" src="{{ 'assets/javascript/stickynav.js'|theme }}"></script>
     <script type="text/javascript" src="{{ 'assets/javascript/navigation.js'|theme }}"></script>
     {% framework extras %}
     {% scripts %}

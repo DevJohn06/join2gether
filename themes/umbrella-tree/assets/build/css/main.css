@@ -1,3 +1,41 @@
+body {
+  background: #000 !important;
+}
+
+.button-pink:hover, .button-standard:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#933985), to(#e8ce48));
+  background-image: linear-gradient(90deg, #933985, #e8ce48);
+  background-position: center;
+  background-size: 120% auto;
+  border: 2px solid transparent;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.button-standard, .button-pink {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+}
+
+.button-pink, .button-standard {
+  background: transparent;
+  background-size: 100% auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(147, 57, 133, 0)), to(rgba(232, 206, 72, 0)));
+  background-image: linear-gradient(90deg, rgba(147, 57, 133, 0), rgba(232, 206, 72, 0));
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+  padding: 14px 65px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.button-pink {
+  border: 2px solid #933985;
+}
+
 body,
 html {
   height: 100%;
@@ -11,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   margin: 0;
 }
 
@@ -25,11 +63,11 @@ a:hover {
 }
 
 a:focus {
-  color: #802151;
+  color: #933985;
 }
 
 body {
-  font-family: "Raleway";
+  font-family: "Roboto";
 }
 
 figure {
@@ -45,71 +83,6 @@ ul {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-}
-
-.__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 62px;
-  color: #802151;
-}
-
-.__content-text {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 45px;
-  color: #333333;
-  padding-top: 20px;
-}
-
-.__main,
-.__section {
-  padding: 50px 0;
-}
-
-.button__standard {
-  margin-top: 20px;
-  background-color: #802151;
-  width: 220px;
-  height: 50px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  color: #fff;
-  font-family: "Montserrat";
-  border-radius: 50px;
-}
-
-.button__standard:focus {
-  color: #fff;
-}
-
-.button__standard:hover {
-  background: #9c4574;
-  cursor: pointer;
-  color: #000;
-}
-
-.button__standard.button__standard--reverse {
-  background-color: #802151;
-  color: #fff;
-}
-
-.button__standard.button__standard--reverse:hover {
-  background-color: #9c4574;
 }
 
 .header__navigation {
@@ -146,11 +119,11 @@ ul {
 }
 
 .header__navigation nav li.link-active a {
-  color: #802151;
+  color: #933985;
 }
 
 .header__navigation nav .has-dropdown.link-active a {
-  color: #802151;
+  color: #933985;
 }
 
 .header__navigation nav li.has-dropdown .nav-dropdown {
@@ -184,7 +157,7 @@ ul {
 }
 
 .header__navigation nav li.has-dropdown .nav-dropdown li a:hover {
-  color: #802151;
+  color: #933985;
 }
 
 .header__navigation nav li.has-dropdown:hover > .nav-dropdown {
@@ -197,7 +170,7 @@ ul {
 }
 
 .header__navigation nav li a {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
@@ -206,7 +179,7 @@ ul {
 }
 
 .header__navigation nav li a:hover, .header__navigation nav li a:active {
-  color: #802151;
+  color: #933985;
 }
 
 .header__navigation .logo-container {
@@ -294,7 +267,7 @@ ul {
 }
 
 .section__herobanner .__container article .heading__herobanner {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: bold;
   font-size: 120px;
@@ -304,7 +277,7 @@ ul {
 }
 
 .section__herobanner .__container article .subheading__herobanner {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 50px;
@@ -570,7 +543,7 @@ ul {
           box-sizing: border-box;
   border-radius: 10px;
   padding-left: 20px;
-  font-family: "Raleway";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
@@ -916,7 +889,7 @@ footer .bottom-footer .__container .footer-copyright {
   font-size: 30px;
   line-height: auto;
   text-align: left;
-  color: #802151;
+  color: #933985;
   padding-bottom: 20px;
 }
 
@@ -950,7 +923,7 @@ footer .bottom-footer .__container .footer-copyright {
   line-height: 44px;
   text-align: center;
   color: #fff;
-  font-family: "Montserrat";
+  font-family: "Poppins";
 }
 
 .section__secondary-cta article div {
@@ -1054,7 +1027,7 @@ footer .bottom-footer .__container .footer-copyright {
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
-  color: #802151;
+  color: #933985;
   padding-bottom: 20px;
 }
 
@@ -1133,16 +1106,12 @@ footer .bottom-footer .__container .footer-copyright {
 .highRisk__supported-services .__container .supported-service-list .supported-service a {
   font-weight: bold;
   font-size: 25px;
-  color: #802151;
-  font-family: "Montserrat";
+  color: #933985;
+  font-family: "Poppins";
 }
 
 .highRisk__supported-services .__container .supported-service-list .supported-service a {
   text-decoration: underline;
-}
-
-.highRisk__supported-services .__container .supported-service-list .supported-service a:hover {
-  color: #9c4574;
 }
 
 .highRisk__content-bottom figure {
@@ -1218,7 +1187,7 @@ footer .bottom-footer .__container .footer-copyright {
   font-weight: bold;
   font-size: 30px;
   line-height: normal;
-  color: #802151;
+  color: #933985;
   padding: 20px 0;
 }
 
@@ -1280,7 +1249,7 @@ footer .bottom-footer .__container .footer-copyright {
 
 .equipment .equipment__products .__container .product-deets ul .deets-item i {
   padding: 10px 20px 0 0;
-  color: #802151;
+  color: #933985;
   font-size: 30px;
 }
 
@@ -1327,7 +1296,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .cannabisIndustry .content-one .__container .__content-text strong {
-  color: #802151;
+  color: #933985;
 }
 
 .cannabisIndustry .content-two .__container .cbd-list {
@@ -1340,7 +1309,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .cannabisIndustry .content-two .__container .cbd-list-item h3 {
-  color: #802151;
+  color: #933985;
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 20px;
@@ -1389,7 +1358,7 @@ footer .bottom-footer .__container .footer-copyright {
 
 .shortTerm .shortTerm__content-one .__container .shortTerm__process .process-itemlist .process-item h3 {
   padding-bottom: 20px;
-  color: #802151;
+  color: #933985;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1447,7 +1416,7 @@ footer .bottom-footer .__container .footer-copyright {
 
 .shortTerm .shortTerm__cta .__container article div .button__standard {
   font-weight: bold;
-  background: #802151;
+  background: #933985;
   color: #fff;
 }
 
@@ -1492,7 +1461,7 @@ footer .bottom-footer .__container .footer-copyright {
 .shortTerm .shortTerm__service .__container article .service-itemlist .service-item h6 {
   font-size: 30px;
   font-weight: 600;
-  color: #802151;
+  color: #933985;
 }
 
 .button__container {
@@ -1641,7 +1610,7 @@ footer .bottom-footer .__container .footer-copyright {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 20px;
-  font-family: "Raleway";
+  font-family: "Roboto";
   color: #12CBC4 !important;
   display: block;
   -webkit-transition: 0.3s;

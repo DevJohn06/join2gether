@@ -1,18 +1,70 @@
-$colors: (primary: #802151,
+$colors: (primary: #933985,
     secondary: #12CBC4,
     c-content: #333,
     c-title: #656565,
-    primary-hover: rgb(156, 69, 116),
-    secondary-hover: #297771);
+    hover:linear-gradient(90deg, rgba(147, 57, 133, 1), rgba(232, 206, 72, 1)),
+    hover-off:linear-gradient(90deg, rgba(147, 57, 133, 0), rgba(232, 206, 72, 0)),
 
-$fonts: (main: 'Montserrat',
-    secondary: 'Raleway'
+
+);
+
+$fonts: (main: 'Poppins',
+    secondary: 'Roboto'
 );
 
 @function color($color-name) {
     @return map-get($colors, $color-name)
-};
+}
+
+;
 
 @function font($font-name) {
     @return map-get($fonts, $font-name)
-};
+}
+
+;
+
+body {
+    background: #000 !important;
+}
+
+%button-hover {
+    background-image: color(hover);
+    background-position: center;
+    background-size: 120% auto;
+    border: 2px solid transparent;
+    color: #fff;
+    transition: 1s;
+}
+
+%button-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #fff;
+}
+
+%button-pink-text {
+    @extend %button-text;
+    color: color(primary);
+}
+
+%button {
+    background: transparent;
+    background-size: 100% auto;
+    background-image: color(hover-off);
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    padding: 14px 65px;
+    transition: 1s;
+
+
+    &:hover {
+        @extend %button-hover;
+    }
+}
+
+%button-pink {
+    @extend %button;
+    border: 2px solid color(primary);
+}
