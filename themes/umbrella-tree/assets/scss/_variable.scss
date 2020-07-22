@@ -28,27 +28,14 @@ body {
     background: #000 !important;
 }
 
-%button-hover {
-    background-image: color(hover);
-    background-position: center;
-    background-size: 120% auto;
-    border: 2px solid transparent;
-    color: #fff;
-    transition: 1s;
-}
 
-%button-text {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #fff;
-}
+// Extensions
 
-%button-pink-text {
-    @extend %button-text;
-    color: color(primary);
-}
+//texts
 
+
+
+// Button standard
 %button {
     background: transparent;
     background-size: 100% auto;
@@ -60,11 +47,42 @@ body {
 
 
     &:hover {
-        @extend %button-hover;
+        background-image: color(hover);
+        background-position: center;
+        background-size: 120% auto;
+        border: 2px solid transparent;
+        color: #fff;
+        transition: 1s;
     }
 }
 
+
+%button-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #fff;
+}
+
+
+// Button pink
 %button-pink {
     @extend %button;
     border: 2px solid color(primary);
+}
+
+%button-pink-text {
+    @extend %button-text;
+    color: color(primary);
+}
+
+// Button standard - end
+
+// texts - start 
+%content-text {
+    font-family: font(secondary);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 45px;
 }

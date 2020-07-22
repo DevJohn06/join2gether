@@ -6,6 +6,8 @@ html {
     margin: 0;
 }
 
+
+// TEXT STYLES
 h1,
 h2,
 h3,
@@ -16,6 +18,43 @@ h6 {
     margin: 0;
 }
 
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 47px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 37px;
+}
+
+h5 {
+    font-size: 29px;
+}
+
+h6 {
+    font-size: 25px;
+}
+
+.headline-text {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.caption-text {
+    font-size: 12px;
+}
+
+// 
 
 
 a {
@@ -47,24 +86,32 @@ ul {
     padding: 0;
 }
 
+// General classes
 .__container {
-    max-width: 1280px;
+    max-width: 1260px;
     width: 100%;
     margin: 0 auto;
+}
+
+.__title {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 82px;
+    color: #fff;
 }
 
 
 // BUTTONS
 
-.button-standard { 
+.button-standard {
     @extend %button;
     @extend %button-text;
 }
 
-.button-pink { 
+.button-pink {
     @extend %button-pink;
-    @extend %button-text; 
+    @extend %button-pink-text;
 }
-// END BUTTONS
 
+// END BUTTONS
 // preset end

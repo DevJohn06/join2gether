@@ -2,24 +2,6 @@ body {
   background: #000 !important;
 }
 
-.button-pink:hover, .button-standard:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#933985), to(#e8ce48));
-  background-image: linear-gradient(90deg, #933985, #e8ce48);
-  background-position: center;
-  background-size: 120% auto;
-  border: 2px solid transparent;
-  color: #fff;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.button-standard, .button-pink {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #fff;
-}
-
 .button-pink, .button-standard {
   background: transparent;
   background-size: 100% auto;
@@ -32,8 +14,38 @@ body {
   transition: 1s;
 }
 
+.button-pink:hover, .button-standard:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#933985), to(#e8ce48));
+  background-image: linear-gradient(90deg, #933985, #e8ce48);
+  background-position: center;
+  background-size: 120% auto;
+  border: 2px solid transparent;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.button-pink, .button-standard {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+}
+
 .button-pink {
   border: 2px solid #933985;
+}
+
+.button-pink {
+  color: #933985;
+}
+
+.section__herobanner .__container article .hero-content {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 45px;
 }
 
 body,
@@ -51,6 +63,42 @@ h5,
 h6 {
   font-family: "Poppins";
   margin: 0;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 47px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+h4 {
+  font-size: 37px;
+}
+
+h5 {
+  font-size: 29px;
+}
+
+h6 {
+  font-size: 25px;
+}
+
+.headline-text {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.caption-text {
+  font-size: 12px;
 }
 
 a {
@@ -80,9 +128,16 @@ ul {
 }
 
 .__container {
-  max-width: 1280px;
+  max-width: 1260px;
   width: 100%;
   margin: 0 auto;
+}
+
+.__title {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 82px;
+  color: #fff;
 }
 
 .header__navigation {
@@ -214,7 +269,6 @@ ul {
 .section__herobanner {
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0px 0px 50px;
   position: relative;
   height: 100vh;
   display: -ms-grid;
@@ -228,7 +282,8 @@ ul {
 .section__herobanner:before {
   content: "";
   position: absolute;
-  background-color: #189b802a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(157, 14, 135, 0.455)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(157, 14, 135, 0.455) 100%);
   width: 100%;
   height: 100%;
   top: 0;
@@ -249,8 +304,8 @@ ul {
 .section__herobanner .__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
@@ -258,7 +313,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
 .section__herobanner .__container article {
@@ -266,41 +320,10 @@ ul {
   z-index: 1;
 }
 
-.section__herobanner .__container article .heading__herobanner {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 120px;
-  line-height: 1;
+.section__herobanner .__container article .hero-content {
+  font-weight: 300;
   color: #fff;
-  text-shadow: 3px 11px 15px rgba(52, 46, 46, 0.25);
-}
-
-.section__herobanner .__container article .subheading__herobanner {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 56px;
-  color: #fff;
-  margin: 50px 0;
-  text-shadow: 3px 11px 15px rgba(52, 46, 46, 0.25);
-}
-
-.section__herobanner .__container article div {
-  display: -ms-grid;
-  display: grid;
-  justify-items: baseline;
-}
-
-.section__herobanner .__container article div .button__standard {
-  display: inline-block;
-  padding: 15px 40px;
-  text-align: center;
-  font-size: 25px;
-  width: unset;
-  height: unset;
-  font-weight: 600;
+  padding: 35px 0 60px;
 }
 
 .content-one {

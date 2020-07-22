@@ -29,6 +29,28 @@ is_hidden = 0
     </div>
 </section> -->
 
+<section class="section__herobanner">
+    <video autoplay muted loop id="bkgVideo" poster="">
+        <source src="{{'joinvideo.mp4'|media}}">
+    </video>
+    <div class="__container">
+        <article> 
+            <h1 class="__title">
+                We're joining together
+            </h1>
+            <p class="hero-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+            <a href="" class="button-standard">
+                Get Started
+            </a>
+        </article>
+        <article>
+
+        </article>
+    </div>
+</section>
+
 {% partial "home/content.htm"%}
 {% content "home/cta.htm" media=mediaLink %}
 {% component 'contactform' media=mediaLink%}
