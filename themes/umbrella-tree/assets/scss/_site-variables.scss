@@ -39,7 +39,7 @@ body {
 %button {
     background: transparent;
     background-size: 100% auto;
-    background-image: color(hover-off);
+    background: color(hover-off);
     border: 2px solid #FFFFFF;
     border-radius: 50px;
     padding: 14px 65px;
@@ -47,7 +47,7 @@ body {
 
 
     &:hover {
-        background-image: color(hover);
+        background: color(hover);
         background-position: center;
         background-size: 120% auto;
         border: 2px solid transparent;
@@ -85,4 +85,19 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 45px;
+}
+
+// ICONS --- START
+%icons {
+    font-size: 40px;
+    color: #fff;
+    transition: 1s;
+}
+
+%icons-hover {
+    background: color(hover);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:color(primary);
+    transition: 1s;
 }

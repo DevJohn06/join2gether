@@ -34,11 +34,12 @@
         grid-row: 1;
         grid-column: 1;
         align-items: center;
+        z-index: 1;
+        height: max-content;
+        align-self: center;
 
-        article {
+        .article__herocontent {
             position: relative;
-            z-index: 1;
-
 
             .hero-content {
                 @extend %content-text;
@@ -46,6 +47,35 @@
                 color: #fff;
                 padding: 35px 0 60px;
             }
+        }
+
+        .article__heroicons {
+            display: grid;
+            justify-content: end;
+            align-items: end;
+            height: 100%;
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(3, max-content);
+                gap: 40px;
+                align-content: end;
+
+                li {
+                    a {
+                        i {
+                            @extend %icons;
+                        }
+
+                        &:hover {
+                            i {
+                                @extend %icons-hover;
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
@@ -67,6 +97,7 @@
             .write-up {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                grid-auto-rows: max-content;
                 gap: 80px;
 
                 .__title {

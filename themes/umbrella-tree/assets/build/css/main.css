@@ -5,8 +5,8 @@ body {
 .button-pink, .button-standard {
   background: transparent;
   background-size: 100% auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(147, 57, 133, 0)), to(rgba(232, 206, 72, 0)));
-  background-image: linear-gradient(90deg, rgba(147, 57, 133, 0), rgba(232, 206, 72, 0));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(147, 57, 133, 0)), to(rgba(232, 206, 72, 0)));
+  background: linear-gradient(90deg, rgba(147, 57, 133, 0), rgba(232, 206, 72, 0));
   border: 2px solid #FFFFFF;
   border-radius: 50px;
   padding: 14px 65px;
@@ -15,8 +15,8 @@ body {
 }
 
 .button-pink:hover, .button-standard:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#933985), to(#e8ce48));
-  background-image: linear-gradient(90deg, #933985, #e8ce48);
+  background: -webkit-gradient(linear, left top, right top, from(#933985), to(#e8ce48));
+  background: linear-gradient(90deg, #933985, #e8ce48);
   background-position: center;
   background-size: 120% auto;
   border: 2px solid transparent;
@@ -40,12 +40,29 @@ body {
   color: #933985;
 }
 
-.section__herobanner .__container article .hero-content {
+.section__herobanner .__container .article__herocontent .hero-content {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 45px;
+}
+
+.section__herobanner .__container .article__heroicons ul li a i {
+  font-size: 40px;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.section__herobanner .__container .article__heroicons ul li a:hover i {
+  background: -webkit-gradient(linear, left top, right top, from(#933985), to(#e8ce48));
+  background: linear-gradient(90deg, #933985, #e8ce48);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #933985;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body,
@@ -313,17 +330,45 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.section__herobanner .__container article {
-  position: relative;
   z-index: 1;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.section__herobanner .__container article .hero-content {
+.section__herobanner .__container .article__herocontent {
+  position: relative;
+}
+
+.section__herobanner .__container .article__herocontent .hero-content {
   font-weight: 300;
   color: #fff;
   padding: 35px 0 60px;
+}
+
+.section__herobanner .__container .article__heroicons {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  height: 100%;
+}
+
+.section__herobanner .__container .article__heroicons ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[3];
+      grid-template-columns: repeat(3, -webkit-max-content);
+      grid-template-columns: repeat(3, max-content);
+  gap: 40px;
+  -ms-flex-line-pack: end;
+      align-content: end;
 }
 
 .content-one {
@@ -350,6 +395,8 @@ ul {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
   gap: 80px;
 }
 
