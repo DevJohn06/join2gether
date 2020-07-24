@@ -24,9 +24,6 @@ $fonts: (main: 'Poppins',
 
 ;
 
-body {
-    background: #000 !important;
-}
 
 
 // Extensions
@@ -79,11 +76,17 @@ body {
 // Button standard - end
 
 // texts - start 
+%title-header { 
+    font-style: normal;
+    font-weight: normal;
+    line-height: 82px;
+    color: #fff;
+}
+
 %content-text {
     font-family: font(secondary);
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
     line-height: 45px;
 }
 

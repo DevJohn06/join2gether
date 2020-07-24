@@ -1,9 +1,14 @@
 title = "Home"
 url = "/"
 layout = "home-layout"
-meta_title = "In each interaction whether it be with clients or with our peers-we are honest, accountable and manage expectations to foster a positive and productive work environment.
-Our eagerness to help others and solve problems. Everything starts with conviction. A desire to do things differently, and the audacity to believe that we’ll succeed. We’re problem solvers. Question answerers. Strategic dreamers. We see every interaction as an opportunity to create opportunities—for our customers, our clients, our colleagues and our communities.
-We value close collaboration among our diverse set of talents and perspectives, and encourage respectful debate in pursuit of a common goal."
+meta_title = "In each interaction whether it be with clients or with our peers-we are honest, accountable and manage
+expectations to foster a positive and productive work environment.
+Our eagerness to help others and solve problems. Everything starts with conviction. A desire to do things differently,
+and the audacity to believe that we’ll succeed. We’re problem solvers. Question answerers. Strategic dreamers. We see
+every interaction as an opportunity to create opportunities—for our customers, our clients, our colleagues and our
+communities.
+We value close collaboration among our diverse set of talents and perspectives, and encourage respectful debate in
+pursuit of a common goal."
 is_hidden = 0
 
 [contactform]
@@ -18,12 +23,14 @@ is_hidden = 0
         <source src="{{'joinvideo.mp4'|media}}">
     </video>
     <div class="__container">
-        <article class="article__herocontent"> 
+        <article class="article__herocontent">
             <h1 class="__title">
                 We're joining together
             </h1>
             <p class="hero-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
             </p>
             <a href="" class="button-standard">
                 Get Started
@@ -51,6 +58,29 @@ is_hidden = 0
     </div>
 </section>
 
-{% partial "home/content.htm"%}
+<section class="section__content" style="background-image:url('{{'homecontent-jpg.jpg'|media}}')" id="">
+    <div class="__container">
+        <article>
+            <h4 class="__title">
+                We can help you
+            </h4>
+
+            <p class="__content-text">
+                In each interaction whether it be with clients or with our peers-we are honest, accountable and manage
+                expectations to foster a positive and productive work environment.
+                Our eagerness to help others and solve problems. Everything starts with conviction. A desire to do
+                things differently, and the audacity to believe that we’ll succeed. We’re problem solvers. Question
+                answerers. Strategic dreamers. We see every interaction as an opportunity to create opportunities—for
+                our customers, our clients, our colleagues and our communities.
+                We value close collaboration among our diverse set of talents and perspectives, and encourage respectful
+                debate in pursuit of a common goal.
+            </p>
+            <a href="about" class="button-pink">
+                Learn more
+            </a>
+        </article>
+    </div>
+</section>
+
 {% content "home/cta.htm" media=mediaLink %}
 {% component 'contactform' media=mediaLink%}
