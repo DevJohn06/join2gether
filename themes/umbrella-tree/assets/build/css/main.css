@@ -5,7 +5,7 @@
   background: linear-gradient(90deg, rgba(147, 57, 133, 0), rgba(232, 206, 72, 0));
   border: 2px solid #FFFFFF;
   border-radius: 50px;
-  padding: 14px 65px;
+  padding: 12px 70px;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -32,6 +32,11 @@
   border: 2px solid #933985;
 }
 
+.button-pink:hover {
+  background-position: center !important;
+  background-size: 120% auto !important;
+}
+
 .button-pink {
   color: #933985;
 }
@@ -50,14 +55,14 @@
   line-height: 45px;
 }
 
-.section__herobanner .__container .article__heroicons ul li a i {
+.article__heroicons ul li a i {
   font-size: 40px;
   color: #fff;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.section__herobanner .__container .article__heroicons ul li a:hover i {
+.article__heroicons ul li a:hover i {
   background: -webkit-gradient(linear, left top, right top, from(#933985), to(#e8ce48));
   background: linear-gradient(90deg, #933985, #e8ce48);
   -webkit-background-clip: text;
@@ -157,7 +162,7 @@ ul {
 }
 
 .header__navigation {
-  padding: 20px 0;
+  padding: 60px 0 20px;
   z-index: 999;
   width: 100%;
   position: fixed;
@@ -186,15 +191,17 @@ ul {
 }
 
 .header__navigation nav li:not(:last-of-type) {
-  padding-right: 30px;
+  padding-right: 105px;
 }
 
 .header__navigation nav li.link-active a {
   color: #933985;
+  font-weight: normal;
 }
 
 .header__navigation nav .has-dropdown.link-active a {
   color: #933985;
+  font-weight: normal;
 }
 
 .header__navigation nav li.has-dropdown .nav-dropdown {
@@ -202,7 +209,7 @@ ul {
   position: absolute;
   top: 25px;
   padding: 10px 20px;
-  background: #fff;
+  background: #ffffffa3;
   border-top: 1px solid #bbb;
   border-right: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
@@ -221,7 +228,7 @@ ul {
 
 .header__navigation nav li.has-dropdown .nav-dropdown li a {
   font-style: normal;
-  font-weight: 700;
+  font-weight: normal;
   font-size: 15px;
   line-height: 40px;
   color: #000;
@@ -243,10 +250,10 @@ ul {
 .header__navigation nav li a {
   font-family: "Poppins";
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: normal;
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .header__navigation nav li a:hover, .header__navigation nav li a:active {
@@ -257,8 +264,9 @@ ul {
   margin: 0px;
 }
 
-.header__navigation .logo-container img {
-  max-width: 150px;
+.header__navigation .logo-container .logo-link img {
+  position: relative;
+  max-width: 100px;
 }
 
 .filler {
@@ -279,7 +287,7 @@ ul {
 }
 
 .navbar-fixed .logo-container img {
-  max-width: 130px !important;
+  max-width: 100px !important;
 }
 
 .section__herobanner {
@@ -348,29 +356,6 @@ ul {
   padding: 35px 0 60px;
 }
 
-.section__herobanner .__container .article__heroicons {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  height: 100%;
-}
-
-.section__herobanner .__container .article__heroicons ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (max-content)[3];
-      grid-template-columns: repeat(3, -webkit-max-content);
-      grid-template-columns: repeat(3, max-content);
-  gap: 40px;
-  -ms-flex-line-pack: end;
-      align-content: end;
-}
-
 .section__content {
   padding: 30px 0;
   height: 1200px;
@@ -403,7 +388,8 @@ ul {
 
 .section__cta:before {
   content: "";
-  background: #189b81b0;
+  background: linear-gradient(89.85deg, #933985 0.03%, rgba(252, 164, 83, 0.65) 59.88%, rgba(232, 206, 72, 0.68) 99.95%);
+  opacity: 0.8;
   background-position: top;
   width: 100%;
   height: 100%;
@@ -413,255 +399,95 @@ ul {
 }
 
 .section__cta .__container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-  justify-items: center;
   position: relative;
   z-index: 1;
-  padding: 80px 0;
+  padding: 100px 0 120px;
 }
 
-.section__cta .__container .cta-content {
-  font-style: normal;
-  font-weight: bold;
-  line-height: 56px;
-  /* or 122% */
+.section__cta .__container .__title {
   color: #fff;
-  text-align: center;
 }
 
-.section__cta .__container .button__standard {
-  margin-top: 40px;
-  width: unset;
-  display: inline-block;
-  height: unset;
-  padding: 15px 20px;
-}
-
-.section__contact {
-  padding: 80px 0;
-}
-
-.section__contact .__container .contact__info {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 85px;
-}
-
-.section__contact .__container .contact__info .__title {
-  font-size: 55px;
-}
-
-.section__contact .__container .contact__info .contact__deets {
-  display: -ms-grid;
-  display: grid;
-  row-gap: 10px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.section__contact .__container .contact__info .contact__deets div {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: max-content auto;
-      grid-template-columns: -webkit-max-content auto;
-      grid-template-columns: max-content auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
-}
-
-.section__contact .__container .contact__info .contact__deets div figure {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section__contact .__container .contact__info .contact__deets .contact-link--phone,
-.section__contact .__container .contact__info .contact__deets .contact-link--email {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 35px;
-  line-height: 62px;
-  color: #656565;
-  word-break: break-word;
-}
-
-.section__contact .__container #contact-form {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  padding-top: 40px;
-  gap: 85px;
-}
-
-.section__contact .__container #contact-form .contact-textboxes {
-  display: -ms-grid;
-  display: grid;
-}
-
-.section__contact .__container #contact-form .contact-textboxes div input[type=text],
-.section__contact .__container #contact-form .contact-textboxes div input[type=email] {
-  width: 100%;
-  height: 70px;
-  background: #F5F5F5;
-  border: 1px solid #656565;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 10px;
-  padding-left: 20px;
-  font-style: normal;
-  font-weight: normal;
+.section__cta .__container .__content-text {
+  color: #fff;
   font-size: 20px;
-  line-height: 37px;
-}
-
-.section__contact .__container #contact-form .contact-textboxes div input[type=text]::-webkit-input-placeholder,
-.section__contact .__container #contact-form .contact-textboxes div input[type=email]::-webkit-input-placeholder {
-  color: #929292;
-  vertical-align: center;
-}
-
-.section__contact .__container #contact-form .contact-textboxes div input[type=text]:-ms-input-placeholder,
-.section__contact .__container #contact-form .contact-textboxes div input[type=email]:-ms-input-placeholder {
-  color: #929292;
-  vertical-align: center;
-}
-
-.section__contact .__container #contact-form .contact-textboxes div input[type=text]::-ms-input-placeholder,
-.section__contact .__container #contact-form .contact-textboxes div input[type=email]::-ms-input-placeholder {
-  color: #929292;
-  vertical-align: center;
-}
-
-.section__contact .__container #contact-form .contact-textboxes div input[type=text]::placeholder,
-.section__contact .__container #contact-form .contact-textboxes div input[type=email]::placeholder {
-  color: #929292;
-  vertical-align: center;
-}
-
-.section__contact .__container #contact-form .contact-textarea {
-  display: -ms-grid;
-  display: grid;
-}
-
-.section__contact .__container #contact-form .contact-textarea div textarea {
-  width: 100%;
-  height: 330px;
-  color: #333;
-  border: 1px solid #12CBC4;
-  background: #F5F5F5;
-  border: 1px solid #656565;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 10px;
-  padding-left: 20px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 37px;
-  color: #656565;
-  padding: 15px;
-}
-
-.section__contact .__container #contact-form .contact-textarea div textarea::-webkit-input-placeholder {
-  color: #929292;
-}
-
-.section__contact .__container #contact-form .contact-textarea div textarea:-ms-input-placeholder {
-  color: #929292;
-}
-
-.section__contact .__container #contact-form .contact-textarea div textarea::-ms-input-placeholder {
-  color: #929292;
-}
-
-.section__contact .__container #contact-form .contact-textarea div textarea::placeholder {
-  color: #929292;
-}
-
-.section__contact .__container #contact-form .contact-textarea .button__standard {
-  -ms-grid-column-align: end;
-      justify-self: end;
+  padding: 10px 0 35px;
 }
 
 footer .top-footer {
-  background: #333;
+  background: #282828;
   padding: 30px 0;
 }
 
 footer .top-footer .__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr auto auto;
-      grid-template-columns: 1fr auto auto;
-  gap: 80px;
+  -ms-grid-columns: 1fr 1fr auto auto;
+      grid-template-columns: 1fr 1fr auto auto;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer .top-footer .__container figure img {
-  max-width: 150px;
+footer .top-footer .__container .footer-1 figure img {
+  width: 125px;
 }
 
-footer .top-footer .__container figure h6 {
-  font-size: 13px;
-  font-weight: 700px;
+footer .top-footer .__container .footer-1 article p {
   color: #fff;
-}
-
-footer .top-footer .__container .footer-text {
-  color: #fff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 31px;
+  font-size: 14px;
+  padding-top: 15px;
 }
 
 footer .top-footer .__container address {
-  font-style: normal;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: max-content auto;
-      grid-template-columns: -webkit-max-content auto;
-      grid-template-columns: max-content auto;
-  -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+  -ms-grid-columns: max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer .top-footer .__container .footer-social {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: end;
-      justify-self: end;
+footer .top-footer .__container address i {
+  font-size: 30px;
+  color: #fff;
 }
 
-footer .top-footer .__container .footer-social .footer-text {
+footer .top-footer .__container address .footer-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  color: #fff;
+}
+
+footer .top-footer .__container .footer-links .footer-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+footer .top-footer .__container .footer-links ul li {
   padding-bottom: 10px;
 }
 
-footer .top-footer .__container .footer-social figure {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
-  -webkit-column-gap: 35px;
-          column-gap: 35px;
+footer .top-footer .__container .footer-links ul li a {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 footer .bottom-footer {
   padding: 20px 0;
+  background-color: #0A0707;
 }
 
 footer .bottom-footer .__container {
@@ -687,25 +513,17 @@ footer .bottom-footer .__container .bottom-footer-writeup {
       align-self: center;
 }
 
-footer .bottom-footer .__container .bottom-footer-writeup h6 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: #8A8686;
-}
-
 footer .bottom-footer .__container .footer-terms,
 footer .bottom-footer .__container .footer-terms a,
 footer .bottom-footer .__container .footer-copyright h6 {
   font-style: normal;
-  font-weight: 600;
+  font-weight: normal;
   font-size: 16px;
-  line-height: 20px;
-  color: #8A8686;
+  line-height: 22px;
+  color: #fff;
 }
 
-footer .bottom-footer .__container .footer-copyright {
+footer .bottom-footer .__container .footer-terms {
   -ms-grid-column-align: end;
       justify-self: end;
 }
@@ -1647,6 +1465,218 @@ footer .bottom-footer .__container .footer-copyright {
   -webkit-transition: margin-left .5s;
   transition: margin-left .5s;
   padding: 20px;
+}
+
+.article__heroicons {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  height: 100%;
+}
+
+.article__heroicons ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[3];
+      grid-template-columns: repeat(3, -webkit-max-content);
+      grid-template-columns: repeat(3, max-content);
+  gap: 40px;
+  -ms-flex-line-pack: end;
+      align-content: end;
+}
+
+.section__contact {
+  padding: 80px 0;
+}
+
+.section__contact .__container .contact__info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 85px;
+}
+
+.section__contact .__container .contact__info .__title {
+  color: #933985;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.section__contact .__container .contact__info .contact__deets {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.section__contact .__container .contact__info .contact__deets div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content auto;
+      grid-template-columns: -webkit-max-content auto;
+      grid-template-columns: max-content auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.section__contact .__container .contact__info .contact__deets div i {
+  color: #933985;
+  font-size: 35px;
+}
+
+.section__contact .__container .contact__info .contact__deets .contact-link--phone,
+.section__contact .__container .contact__info .contact__deets .contact-link--email {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 29px;
+  line-height: 43px;
+  color: #000;
+}
+
+.section__contact .__container #contact-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding-top: 40px;
+  gap: 50px;
+}
+
+.section__contact .__container #contact-form .contact-textboxes {
+  display: -ms-grid;
+  display: grid;
+}
+
+.section__contact .__container #contact-form .contact-textboxes .contact-name {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.section__contact .__container #contact-form .contact-textboxes div input[type=text],
+.section__contact .__container #contact-form .contact-textboxes div input[type=email] {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+}
+
+.section__contact .__container #contact-form .contact-textboxes div input[type=text]::-webkit-input-placeholder,
+.section__contact .__container #contact-form .contact-textboxes div input[type=email]::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #A0A2A5;
+}
+
+.section__contact .__container #contact-form .contact-textboxes div input[type=text]:-ms-input-placeholder,
+.section__contact .__container #contact-form .contact-textboxes div input[type=email]:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #A0A2A5;
+}
+
+.section__contact .__container #contact-form .contact-textboxes div input[type=text]::-ms-input-placeholder,
+.section__contact .__container #contact-form .contact-textboxes div input[type=email]::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #A0A2A5;
+}
+
+.section__contact .__container #contact-form .contact-textboxes div input[type=text]::placeholder,
+.section__contact .__container #contact-form .contact-textboxes div input[type=email]::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #A0A2A5;
+}
+
+.section__contact .__container #contact-form .contact-textarea {
+  display: -ms-grid;
+  display: grid;
+}
+
+.section__contact .__container #contact-form .contact-textarea div textarea {
+  width: 100%;
+  height: 233px;
+  color: #333;
+  border: 2px solid #000;
+  background: #fff;
+  border: 1px solid color #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #656565;
+  padding: 15px;
+}
+
+.section__contact .__container #contact-form .contact-textarea div textarea::-webkit-input-placeholder {
+  color: #A0A2A5;
+}
+
+.section__contact .__container #contact-form .contact-textarea div textarea:-ms-input-placeholder {
+  color: #A0A2A5;
+}
+
+.section__contact .__container #contact-form .contact-textarea div textarea::-ms-input-placeholder {
+  color: #A0A2A5;
+}
+
+.section__contact .__container #contact-form .contact-textarea div textarea::placeholder {
+  color: #A0A2A5;
+}
+
+.section__contact .__container #contact-form .button-pink {
+  width: 45%;
+  height: 58px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background: #933985;
+  color: #fff;
+}
+
+.section__contact .__container #contact-form .button-pink:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#933985), to(#e8ce48));
+  background: linear-gradient(90deg, #933985, #e8ce48);
+}
+
+.section__contact .__container #contact-form .article__heroicons {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.section__contact .__container #contact-form .article__heroicons ul li i {
+  color: #933985;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

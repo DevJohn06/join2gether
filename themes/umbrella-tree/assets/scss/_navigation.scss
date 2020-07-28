@@ -1,6 +1,6 @@
 // NAVIGATION START 
 .header__navigation {
-    padding: 20px 0;
+    padding: 60px 0 20px;
     z-index: 999;
     width: 100%;
     position: fixed;
@@ -22,17 +22,19 @@
         }
 
         li:not(:last-of-type) {
-            padding-right: 30px;
+            padding-right: 105px;
         }
 
         li.link-active a {
             color: color(primary);
+            font-weight: normal;
         }
 
         .has-dropdown {
             &.link-active {
                 a {
                     color: color(primary);
+                    font-weight: normal;
                 }
             }
         }
@@ -43,7 +45,7 @@
                 position: absolute;
                 top: 25px;
                 padding: 10px 20px;
-                background: #fff;
+                background: #ffffffa3;
                 border-top: 1px solid #bbb;
                 border-right: 1px solid #bbb;
                 border-bottom: 1px solid #bbb;
@@ -58,7 +60,7 @@
 
                     a {
                         font-style: normal;
-                        font-weight: 700;
+                        font-weight: normal;
                         font-size: 15px;
                         line-height: 40px;
                         color: #000;
@@ -82,10 +84,10 @@
             a {
                 font-family: font(main);
                 text-transform: uppercase;
-                font-weight: 600;
+                font-weight: normal;
                 color: #fff;
                 text-decoration: none;
-                font-size: 18px;
+                font-size: 15px;
                 &:hover,
                 &:active {
                     color: color(primary);
@@ -96,10 +98,13 @@
 
     .logo-container {
         margin: 0px;
-
-        img {
-            max-width: 150px;
+        .logo-link {
+            img {
+                position: relative;
+                max-width: 100px;
+            }
         }
+
     }
 }
 
@@ -131,7 +136,7 @@
 
     .logo-container {
         img {
-            max-width: 130px !important;
+            max-width: 100px !important;
         }
     }
 }

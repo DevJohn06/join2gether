@@ -1,59 +1,87 @@
- 
  {% set assetImageUrl = 'assets/images/'|theme %}
- 
+
  <!-- FOOTER START -->
  <footer>
-    <section class="top-footer">
-        <div class="__container">
-            <figure>
-                <a href="">
-                    <img src="{{'logo-w.png'|media}}" alt="">
-                </a>
-            </figure>
-            <address>
-                <figure>
-                    <img src="{{assetImageUrl}}/icon-map-marker.svg" alt="">
-                </figure>
-                <h4 class="footer-text">
-                    Ladislawa Village, Buhangin, Davao City, Philppines 8000
-                </h4>
-            </address>
-            <div class="footer-social">
-                <h4 class="footer-text">
-                    Follow us on:
-                </h4>
-                <figure>
-                    <a href="https://www.facebook.com/join2getherph/" target="_blank">
-                        <img src="{{assetImageUrl}}/social-facebook.svg" alt="">
-                    </a>
-                    <a href="https://www.linkedin.com/company/join2gether/" target="_blank"> 
-                        <img src="{{assetImageUrl}}/social-linkedin.svg" alt="">
-                    </a>
-                    <!-- <a href="" target="_blank">
-                        <img src="{{assetImageUrl}}/social-tiktok.svg" alt="">
-                    </a> -->
-                    <a href="https://twitter.com/Join2gether1_" target="_blank">
-                        <img src="{{assetImageUrl}}/social-twitter.svg" alt="">
-                    </a>
-                    <!-- <a href="https://www.youtube.com/channel/UCqQDDd2r4udOswSYmVEXasQ" target="_blank">
-                        <img src="{{assetImageUrl}}/social-youtube.svg" alt="">
-                    </a> -->
-                </figure>
-            </div>
-        </div>
-    </section>
-    <section class="bottom-footer">
-        <div class="__container">
-            <article class="footer-terms">
-                <a href="{{'terms-and-conditions'|page}}">Terms and conditions</a> | <a href="{{ 'privacy-policy'|page }}">
-                    Privacy policy
-                </a>
-            </article>
+     <section class="top-footer">
+         <div class="__container">
+             <div class="footer-1">
+                 <figure>
+                     <img src="{{'logo-w.png'|media}}" alt="">
+                 </figure>
+                 <article>
+                     <p class="body-text">
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at 
+                         eleifend elit ornare ut.
+                     </p>
+                 </article>
+             </div>
+
+             <address>
+                 <i class="fas fa-map-marker-alt"></i>
+                 <h4 class="footer-text">
+                     Ladislawa Village, Buhangin, </br>Davao City, Philppines 8000
+                 </h4>
+             </address>
+             <div class="footer-links">
+                 <h6 class="footer-title">
+                     Company
+                 </h6>
+                 <ul>
+                     <li>
+                         <a href="">
+                             About
+                         </a>
+                     </li>
+                     <li>
+                         <a href="">
+                             Clients
+                         </a>
+                     </li>
+                     <li>
+                         <a href="">
+                             Contact
+                         </a>
+                     </li>
+                 </ul>
+             </div>
+             <div class="footer-links">
+                 <h6 class="footer-title">
+                     Processing Solutions
+                 </h6>
+                 <ul>
+                     <li>
+                         <a href="">
+                             Cash Discount
+                         </a>
+                     </li>
+                     <li>
+                         <a href="">
+                             High Risk Processing
+                         </a>
+                     </li>
+                     <li>
+                         <a href="">
+                             Low Risk Processing
+                         </a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </section>
+     <section class="bottom-footer">
+         <div class="__container">
             <article class="footer-copyright">
                 <h6>
-                    © 2020 Join2gether, all rights reserved.
+                    Copyright © 2020 Join2gether. All rights reserved.
                 </h6>
             </article>
-        </div>
-</footer>
-<!-- FOOTER END -->
+             <article class="footer-terms">
+                 <a href="{{'terms-and-conditions'|page}}">Terms and conditions</a> | <a
+                     href="{{ 'privacy-policy'|page }}">
+                     Privacy policy
+                 </a>
+             </article>
+
+         </div>
+ </footer>
+ <!-- FOOTER END -->

@@ -5,45 +5,52 @@
     <div class="__container">
         <section class="contact__info">
             <article>
-                <h1 class="__title">
-                    We'd love to hear </br> from you!
-                </h1>
+                <h2 class="__title">
+                    We'd love to hear from you!
+                </h2>
             </article>
             <article class="contact__deets">
                 <div>
-                    <figure>
-                        <img src="{{imageUrl}}/phone.svg" alt="">
-                    </figure>
+                    <i class="fas fa-phone-alt"></i>
                     <a class="contact-link--phone" href="tel:8555041005">(855)-503-1005</a>
                 </div>
                 <div>
-                    <figure>
-                        <img src="{{imageUrl}}/mail.svg" alt="">
-                    </figure>
+                    <i class="far fa-envelope"></i>
                     <a class="contact-link--email" href="mailto:info@join2gether.com">info@join2gether.com</a>
                 </div>
             </article>
         </section>
         <form id="contact-form" data-request="onSend" action="">
             <article class="contact-textboxes">
-                <div>
-                    <input type="text" name="name" placeholder="Name">
+                <div class="contact-name">
+                    <div>
+                        <label for="">First Name</label>
+                        <input type="text" name="FirstName" placeholder="First Name">
+                    </div>
+                    <div>
+                        <label for="">Last Name</label>
+                        <input type="text" name="LastName" placeholder="Last Name">
+                    </div>
                 </div>
                 <div>
+                    <label for="">Email</label>
                     <input type="email" name="email" placeholder="Email">
                 </div>
                 <div>
+                    <label for="">Phone</label>
                     <input type="text" name="phone" placeholder="Phone">
                 </div>
             </article>
             <article class="contact-textarea">
                 <div>
+                    <label for="">Message</label>
                     <textarea name="content" placeholder="Message" cols="30" rows="10"></textarea>
                 </div>
-                <button class="button__standard" type="submit">
-                    Submit
-                </button>
             </article>
+            {%partial 'social-icons.htm'%}
+            <button class="button-pink" type="submit">
+                Submit
+            </button>
         </form>
     </div>
 </section>

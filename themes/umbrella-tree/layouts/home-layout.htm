@@ -14,6 +14,7 @@ description = "Home Layout"
     </style>
     {% endif %}
 
+
     {% if this.page.id != 'home'%}
     <style>
         .header__navigation {
@@ -26,8 +27,7 @@ description = "Home Layout"
     </style>
     {% endif %}
 
-
-  
+    {%partial 'site/navigation'%}
 
     <!-- Content -->
     <section id="layout-content">
@@ -55,7 +55,7 @@ description = "Home Layout"
     <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="{{ 'assets/javascript/slick.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/stickynav.js'|theme }}"></script>
     <script type="text/javascript" src="{{ 'assets/javascript/navigation.js'|theme }}"></script>
     {% framework extras %}
     {% scripts %}
