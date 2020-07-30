@@ -84,7 +84,7 @@
             a {
                 font-family: font(main);
                 text-transform: uppercase;
-                font-weight: normal;
+                font-weight: 300;
                 color: #fff;
                 text-decoration: none;
                 font-size: 15px;
@@ -101,7 +101,7 @@
         .logo-link {
             img {
                 position: relative;
-                max-width: 100px;
+                max-width: 105px;
             }
         }
 
@@ -136,7 +136,12 @@
 
     .logo-container {
         img {
-            max-width: 100px !important;
+            max-width: 105px !important;
         }
     }
+}
+
+
+#color-change {
+    transition: 0.5s;
 }

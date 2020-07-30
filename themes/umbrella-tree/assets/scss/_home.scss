@@ -12,20 +12,24 @@
     &:before {
         content: "";
         position: absolute;
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(157, 14, 135, 0.455) 100%);
-        ;
+        background-image: linear-gradient(290.74deg, #12CBC4 11.01%, #933985 90.64%);
+        opacity: 0.8;
+        transform: rotate(180deg);;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
     }
 
-    video {
+    figure {
         width: 100%;
         grid-row: 1;
         grid-column: 1;
-        height: 100vh;
-        object-fit: cover;
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100vh;
+        }
     }
 
     .__container {
@@ -40,10 +44,12 @@
 
         .article__herocontent {
             position: relative;
-
+            .__title {
+                color:#fff;
+            }
             .hero-content {
                 @extend %content-text;
-                font-weight: 300;
+                font-weight: normal;
                 font-size: 20px;
                 color: #fff;
                 padding: 35px 0 60px;
@@ -78,7 +84,6 @@
 
 
 // CTA STYLES START
-
 .section__cta {
     background-repeat: no-repeat;
     background-position: center;
@@ -87,8 +92,9 @@
 
     &:before {
         content: "";
-        background: linear-gradient(89.85deg, #933985 0.03%, rgba(252, 164, 83, 0.65) 59.88%, rgba(232, 206, 72, 0.68) 99.95%);
+        background: linear-gradient(290.74deg, #12CBC4 11.01%, #933985 90.64%);
         opacity: 0.8;
+        transform: rotate(180deg);
         background-position: top;
         width: 100%;
         height: 100%;
@@ -125,7 +131,7 @@ footer {
         .__container {
             display: grid;
             grid-template-columns: 1fr 1fr auto auto;
-            gap: 50px;
+            gap: 130px;
             align-items: center;
 
             .footer-1 {
@@ -160,7 +166,7 @@ footer {
                     font-style: normal;
                     font-weight: normal;
                     font-size: 20px;
-                    line-height: 22px;
+                    line-height: 30px;
                     color: #fff;
                 }
             }
@@ -226,13 +232,19 @@ footer {
 
             .footer-terms,
             .footer-terms a,
-            .footer-copyright h6 {
+            .footer-copyright p {
                 font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 22px;
                 color:#fff;
                 font-family: map-get($fonts, main-font);
+                transition: 0.5s;
+
+                &:hover {
+                    color: color(secondary);
+                    text-decoration: none;
+                }
             }
 
             .footer-terms {

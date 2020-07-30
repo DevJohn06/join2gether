@@ -29,7 +29,7 @@
 }
 
 .button-pink {
-  border: 2px solid #933985;
+  border: 2px solid #802151;
 }
 
 .button-pink:hover {
@@ -38,7 +38,7 @@
 }
 
 .button-pink {
-  color: #933985;
+  color: #802151;
 }
 
 .__title {
@@ -67,7 +67,7 @@
   background: linear-gradient(90deg, #933985, #e8ce48);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #933985;
+  color: #802151;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -135,7 +135,7 @@ a:hover {
 }
 
 a:focus {
-  color: #933985;
+  color: #802151;
 }
 
 body {
@@ -159,6 +159,11 @@ ul {
 
 .__content-text {
   font-size: 20px;
+  font-weight: normal;
+}
+
+.__section {
+  padding: 50px 0;
 }
 
 .header__navigation {
@@ -195,12 +200,12 @@ ul {
 }
 
 .header__navigation nav li.link-active a {
-  color: #933985;
+  color: #802151;
   font-weight: normal;
 }
 
 .header__navigation nav .has-dropdown.link-active a {
-  color: #933985;
+  color: #802151;
   font-weight: normal;
 }
 
@@ -235,7 +240,7 @@ ul {
 }
 
 .header__navigation nav li.has-dropdown .nav-dropdown li a:hover {
-  color: #933985;
+  color: #802151;
 }
 
 .header__navigation nav li.has-dropdown:hover > .nav-dropdown {
@@ -250,14 +255,14 @@ ul {
 .header__navigation nav li a {
   font-family: "Poppins";
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 300;
   color: #fff;
   text-decoration: none;
   font-size: 15px;
 }
 
 .header__navigation nav li a:hover, .header__navigation nav li a:active {
-  color: #933985;
+  color: #802151;
 }
 
 .header__navigation .logo-container {
@@ -266,7 +271,7 @@ ul {
 
 .header__navigation .logo-container .logo-link img {
   position: relative;
-  max-width: 100px;
+  max-width: 105px;
 }
 
 .filler {
@@ -287,7 +292,12 @@ ul {
 }
 
 .navbar-fixed .logo-container img {
-  max-width: 100px !important;
+  max-width: 105px !important;
+}
+
+#color-change {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .section__herobanner {
@@ -306,23 +316,29 @@ ul {
 .section__herobanner:before {
   content: "";
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(157, 14, 135, 0.455)));
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(157, 14, 135, 0.455) 100%);
+  background-image: linear-gradient(290.74deg, #12CBC4 11.01%, #933985 90.64%);
+  opacity: 0.8;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
 
-.section__herobanner video {
+.section__herobanner figure {
   width: 100%;
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
   grid-column: 1;
-  height: 100vh;
+}
+
+.section__herobanner figure img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100vh;
 }
 
 .section__herobanner .__container {
@@ -349,8 +365,12 @@ ul {
   position: relative;
 }
 
+.section__herobanner .__container .article__herocontent .__title {
+  color: #fff;
+}
+
 .section__herobanner .__container .article__herocontent .hero-content {
-  font-weight: 300;
+  font-weight: normal;
   font-size: 20px;
   color: #fff;
   padding: 35px 0 60px;
@@ -370,7 +390,7 @@ ul {
 }
 
 .section__content .__container article .__title {
-  color: #933985;
+  color: #802151;
   font-weight: 500;
 }
 
@@ -388,8 +408,10 @@ ul {
 
 .section__cta:before {
   content: "";
-  background: linear-gradient(89.85deg, #933985 0.03%, rgba(252, 164, 83, 0.65) 59.88%, rgba(232, 206, 72, 0.68) 99.95%);
+  background: linear-gradient(290.74deg, #12CBC4 11.01%, #933985 90.64%);
   opacity: 0.8;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   background-position: top;
   width: 100%;
   height: 100%;
@@ -424,7 +446,7 @@ footer .top-footer .__container {
   display: grid;
   -ms-grid-columns: 1fr 1fr auto auto;
       grid-template-columns: 1fr 1fr auto auto;
-  gap: 50px;
+  gap: 130px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -461,7 +483,7 @@ footer .top-footer .__container address .footer-text {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 22px;
+  line-height: 30px;
   color: #fff;
 }
 
@@ -515,12 +537,21 @@ footer .bottom-footer .__container .bottom-footer-writeup {
 
 footer .bottom-footer .__container .footer-terms,
 footer .bottom-footer .__container .footer-terms a,
-footer .bottom-footer .__container .footer-copyright h6 {
+footer .bottom-footer .__container .footer-copyright p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .bottom-footer .__container .footer-terms:hover,
+footer .bottom-footer .__container .footer-terms a:hover,
+footer .bottom-footer .__container .footer-copyright p:hover {
+  color: #12CBC4;
+  text-decoration: none;
 }
 
 footer .bottom-footer .__container .footer-terms {
@@ -559,12 +590,14 @@ footer .bottom-footer .__container .footer-terms {
   font-size: 50px;
   line-height: 75px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .secondary-herobanner:before {
   content: "";
-  background: #52003eb0;
+  background: linear-gradient(290.74deg, #12CBC4 11.01%, #933985 90.64%);
+  opacity: 0.8;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -580,8 +613,12 @@ footer .bottom-footer .__container .footer-terms {
   color: #333333;
 }
 
+.__title {
+  color: #802151;
+}
+
 .page-aboutus {
-  padding: 0 0 50px 0;
+  padding: 80px 0 50px;
 }
 
 .page-aboutus .page-aboutus--intro .__container {
@@ -592,14 +629,15 @@ footer .bottom-footer .__container .footer-terms {
   gap: 80px;
 }
 
-.page-aboutus .page-aboutus--intro .__container .jumbo-text-container .__title {
-  font-size: 90px;
+.page-aboutus .page-aboutus--intro .__container .shotgun-statement-container .__title {
+  color: #802151;
   line-height: 1.2;
 }
 
-.page-aboutus .page-aboutus--intro .__container .__content-text {
-  font-size: 50px;
+.page-aboutus .page-aboutus--intro .__container article h3 {
+  color: #000;
   line-height: 1.5;
+  font-weight: normal;
   padding-top: 0px;
 }
 
@@ -612,12 +650,12 @@ footer .bottom-footer .__container .footer-terms {
 }
 
 .page-aboutus .page-aboutus--whoarewe .__container article .__title {
-  font-size: 80px;
   padding: 0 0 20px 0;
+  color: #802151;
 }
 
 .page-aboutus .page-aboutus--whoarewe .__container article .__content-text {
-  font-size: 30px;
+  color: #000;
 }
 
 .page-aboutus .page-aboutus--whoarewe .__container figure img {
@@ -645,7 +683,7 @@ footer .bottom-footer .__container .footer-terms {
 }
 
 .page-services .page-services__items .__container .services-list .service-item div .__content-text {
-  font-weight: bold;
+  color: #000;
 }
 
 .page-services .page-services__items .__container .services-list .service-item figure {
@@ -729,7 +767,7 @@ footer .bottom-footer .__container .footer-terms {
   font-size: 30px;
   line-height: auto;
   text-align: left;
-  color: #933985;
+  color: #802151;
   padding-bottom: 20px;
 }
 
@@ -752,27 +790,47 @@ footer .bottom-footer .__container .footer-terms {
 
 .section__secondary-cta {
   background: #12CBC4;
-  text-align: center;
   padding: 80px 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
-.section__secondary-cta article p {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 35px;
-  line-height: 44px;
-  text-align: center;
+.section__secondary-cta:before {
+  content: "";
+  background: linear-gradient(290.74deg, #12CBC4 11.01%, #933985 90.64%);
+  opacity: 0.8;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: 0.8;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.section__secondary-cta .__container {
+  position: relative;
+  z-index: 1;
+}
+
+.section__secondary-cta .__container article .__title {
   color: #fff;
-  font-family: "Poppins";
 }
 
-.section__secondary-cta article div {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 20px;
+.section__secondary-cta .__container article h6 {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 44px;
+  color: #fff;
+  font-family: "Roboto";
+}
+
+.section__secondary-cta .__container article div {
+  padding-top: 35px;
 }
 
 .about__download-links {
@@ -800,8 +858,10 @@ footer .bottom-footer .__container .footer-terms {
 }
 
 .about__download-links .__container .links-itemlist .links-item h5 {
+  color: #12CBC4;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
+  margin-bottom: 35px;
 }
 
 .page-about-clients .page-clients--one .__container h2 {
@@ -810,13 +870,13 @@ footer .bottom-footer .__container .footer-terms {
 }
 
 .page-about-clients .page-clients--one .__container ul li {
-  padding: 0 0 30px;
+  padding: 20px 0 30px;
 }
 
 .page-about-clients .page-clients--one .__container ul li h2 {
-  font-size: 35px;
   padding: 0;
   text-align: left;
+  color: #000;
 }
 
 .page-about-clients .client-item-list .__container .client-banner {
@@ -845,7 +905,8 @@ footer .bottom-footer .__container .footer-terms {
 }
 
 .page-about-clients .client-item-list .__container .client-item .__content-text {
-  font-weight: bold;
+  font-weight: normal;
+  color: #000;
 }
 
 .__content-one .__container {
@@ -867,7 +928,7 @@ footer .bottom-footer .__container .footer-terms {
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
-  color: #933985;
+  color: #802151;
   padding-bottom: 20px;
 }
 
@@ -946,7 +1007,7 @@ footer .bottom-footer .__container .footer-terms {
 .highRisk__supported-services .__container .supported-service-list .supported-service a {
   font-weight: bold;
   font-size: 25px;
-  color: #933985;
+  color: #802151;
   font-family: "Poppins";
 }
 
@@ -1027,7 +1088,7 @@ footer .bottom-footer .__container .footer-terms {
   font-weight: bold;
   font-size: 30px;
   line-height: normal;
-  color: #933985;
+  color: #802151;
   padding: 20px 0;
 }
 
@@ -1089,7 +1150,7 @@ footer .bottom-footer .__container .footer-terms {
 
 .equipment .equipment__products .__container .product-deets ul .deets-item i {
   padding: 10px 20px 0 0;
-  color: #933985;
+  color: #802151;
   font-size: 30px;
 }
 
@@ -1136,7 +1197,7 @@ footer .bottom-footer .__container .footer-terms {
 }
 
 .cannabisIndustry .content-one .__container .__content-text strong {
-  color: #933985;
+  color: #802151;
 }
 
 .cannabisIndustry .content-two .__container .cbd-list {
@@ -1149,7 +1210,7 @@ footer .bottom-footer .__container .footer-terms {
 }
 
 .cannabisIndustry .content-two .__container .cbd-list-item h3 {
-  color: #933985;
+  color: #802151;
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 20px;
@@ -1198,7 +1259,7 @@ footer .bottom-footer .__container .footer-terms {
 
 .shortTerm .shortTerm__content-one .__container .shortTerm__process .process-itemlist .process-item h3 {
   padding-bottom: 20px;
-  color: #933985;
+  color: #802151;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1256,7 +1317,7 @@ footer .bottom-footer .__container .footer-terms {
 
 .shortTerm .shortTerm__cta .__container article div .button__standard {
   font-weight: bold;
-  background: #933985;
+  background: #802151;
   color: #fff;
 }
 
@@ -1301,7 +1362,7 @@ footer .bottom-footer .__container .footer-terms {
 .shortTerm .shortTerm__service .__container article .service-itemlist .service-item h6 {
   font-size: 30px;
   font-weight: 600;
-  color: #933985;
+  color: #802151;
 }
 
 .button__container {
@@ -1503,7 +1564,7 @@ footer .bottom-footer .__container .footer-terms {
 }
 
 .section__contact .__container .contact__info .__title {
-  color: #933985;
+  color: #802151;
   font-weight: 600;
   line-height: 70px;
 }
@@ -1530,7 +1591,7 @@ footer .bottom-footer .__container .footer-terms {
 }
 
 .section__contact .__container .contact__info .contact__deets div i {
-  color: #933985;
+  color: #802151;
   font-size: 35px;
 }
 
@@ -1660,7 +1721,7 @@ footer .bottom-footer .__container .footer-terms {
       justify-self: end;
   -ms-grid-column: 2;
   grid-column: 2;
-  background: #933985;
+  background: #802151;
   color: #fff;
 }
 
@@ -1676,7 +1737,7 @@ footer .bottom-footer .__container .footer-terms {
 }
 
 .section__contact .__container #contact-form .article__heroicons ul li i {
-  color: #933985;
+  color: #802151;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

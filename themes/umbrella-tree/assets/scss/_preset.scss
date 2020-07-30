@@ -100,8 +100,12 @@ ul {
 .__content-text {
     @extend %content-text;
     font-size: 20px;
+    font-weight: normal;
 }
 
+.__section {
+    padding: 50px 0;
+}
 
 // BUTTONS
 

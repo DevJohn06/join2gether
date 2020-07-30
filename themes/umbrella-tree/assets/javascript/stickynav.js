@@ -41,13 +41,13 @@
             }, 0);
         }
 
-        if ($navbar.hasClass("navbar-fixed") || $navbar.hasClass("navbar-secondary")){
-            $('#homeLogo').attr("src",getRootWebSitePath()+"/storage/app/media/logo.png");
-        } 
+        // if ($navbar.hasClass("navbar-fixed") || $navbar.hasClass("navbar-secondary")){
+        //     $('#homeLogo').attr("src",getRootWebSitePath()+"/storage/app/media/logo.png");
+        // } 
     
-        else {
-            $('#homeLogo').attr("src",getRootWebSitePath()+"/storage/app/media/logo-w.png");
-        }
+        // else {
+        //     $('#homeLogo').attr("src",getRootWebSitePath()+"/storage/app/media/logo-w.png");
+        // }
     });
 })(jQuery, undefined);
 

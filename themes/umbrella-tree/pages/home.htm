@@ -19,20 +19,23 @@ is_hidden = 0
 <!-- HEROBANNER -->
 
 <section class="section__herobanner">
-    <video autoplay muted loop id="bkgVideo" poster="">
+    <!-- <video autoplay muted loop id="bkgVideo" poster="">
         <source src="{{'joinvideo.mp4'|media}}">
-    </video>
+    </video> -->
+    <figure>
+        <img src="{{'hero-image.jpg'|media}}" alt="">
+    </figure>
     <div class="__container">
         <article class="article__herocontent">
             <h1 class="__title">
-                We're joining together
+                We'll row together.
             </h1>
             <p class="hero-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+ 
+                We hold ourselves highly accountable to clients and peers in every interaction because we believe that managing expectations fosters a positive and productive work environment.
+
             </p>
-            <a href="" class="button-standard">
+            <a href="{{'contact'|page}}" class="button-standard">
                 Get Started
             </a>
         </article>
@@ -58,11 +61,11 @@ is_hidden = 0
                 debate in pursuit of a common goal.
             </p>
             <a href="about" class="button-pink">
-                Learn more
+                Know More
             </a>
         </article>
     </div>
 </section>
 
-{% content "home/cta.htm" media=mediaLink %}
+<!-- {% content "home/cta.htm" media=mediaLink %} -->
 {% component 'contactform' media=mediaLink%}

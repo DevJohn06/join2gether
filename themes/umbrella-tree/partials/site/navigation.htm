@@ -5,9 +5,17 @@
 <header id="navbar" class="header__navigation">
     <div class="__container">
         <figure class="logo-container">
+            <!-- {% if this.page.id != 'home'%}
+            <a class="logo-link" href="{{ 'home'|page }}">
+                <img id="homeLogo" src="{{'logo.png'|media}}" alt="">
+            </a> 
+            {% else %}
             <a class="logo-link" href="{{ 'home'|page }}">
                 <img id="homeLogo" src="{{'logo-w.png'|media}}" alt="">
-            </a>
+            </a> 
+            {% endif %} -->
+            <a class="logo-link" href="{{ 'home'|page }}">
+                <img id="homeLogo" src="{{'logo.png'|media}}" alt="">
             <div class="mobile-hidden">
                 <a href="#navigation-modal" onclick="openNav()">
                     <i class="fas fa-bars"></i>
@@ -17,12 +25,12 @@
         <nav>
             <ul>
                 <li class="{% if this.page.id == 'home' %}link-active{% endif %}">
-                    <a href="{{ 'home'|page }}">
+                    <a id="color-change" href="{{ 'home'|page }}">
                         Home
                     </a>
                 </li>
                 <li class="has-dropdown {% if this.page.id in ['about','about-us-services'] %}link-active{% endif %}">
-                    <a href="{{ 'about'|page }}">
+                    <a id="color-change" href="{{ 'about'|page }}">
                         About
                     </a>
                     <ul class="nav-dropdown">
@@ -39,13 +47,13 @@
                     </ul>
                 </li>
                 <li class="{% if this.page.id == 'services' %}link-active{% endif %}">
-                    <a href="{{ 'services'|page }}">
+                    <a id="color-change" href="{{ 'services'|page }}">
                         Services
                     </a>
                 </li>
                 <li class="has-dropdown {% if this.page.id in ['high-risk-processing','low-risk-solution','cannabis-industry-process','short-term-lenders',
                 'terminals-and-readers','pos-systems','marketing-solutions','other-services','cash-discount']%}link-active{% endif %}">
-                    <a href="javascript:function() { return false; }">
+                    <a id="color-change" href="javascript:function() { return false; }">
                         Processing Solutions
                     </a>
                     <ul class="nav-dropdown">
@@ -83,7 +91,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="{{ 'contact'|page }}">
+                    <a id="color-change" href="{{ 'contact'|page }}">
                         Contact
                     </a>
                 </li>
