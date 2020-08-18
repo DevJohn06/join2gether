@@ -104,7 +104,7 @@ is_hidden = 0
                         </li>
                     </ul>
                     <div>
-                        <a data-toggle="modal" class="button__standard button__standard--reverse"
+                        <a data-toggle="modal" class="button-standard"
                             href="{{currentPage}}/#modal-possolution-one">Learn More</a>
                     </div>
                 </div>
@@ -132,7 +132,7 @@ is_hidden = 0
                         </p>
                     </div>
                     <div>
-                        <a class="button__standard button__standard--reverse"
+                        <a class="button-standard"
                             href="contact">Get Started</a>
                     </div>
                 </div>
@@ -141,13 +141,16 @@ is_hidden = 0
     </section>
 
     <section>
-        <div class="__content">
-            <h2>
-                Upgrade your operations and grow your business with our cutting-edge POS systems!
-            </h2>
+        <div class="__container">
+            <div class="__content">
+                <h5>
+                    Upgrade your operations and grow your business with our cutting-edge POS systems!
+                </h5>
+            </div>
         </div>
-
     </section>
+
+
     {% partial 'modals/equipment-modal.htm' 
     currentLink=modalLinkOne %}
 </main>

@@ -34,14 +34,13 @@ description = "Home Layout"
         {% if this.page.id != 'home'%}
         {% partial 'secondary/secondary-herobanner'%}
         {% endif %}
-
         {% page %}
     </section>
 
     <!-- cta for secondary -->
-    {% if this.page.id != 'home'%}
-    {% partial 'site/secondary-cta'%}
-    {% endif %}
+        {% if this.page.id != 'home'%}
+        {% partial 'site/secondary-cta'%}
+        {% endif %}
     <!-- cta for secondary -->
 
     <!-- Footer -->

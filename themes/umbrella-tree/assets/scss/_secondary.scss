@@ -1,4 +1,3 @@
-
 // PRESET
 
 .secondary-herobanner {
@@ -18,7 +17,7 @@
             z-index: 1;
 
             h1 {
-                color:#fff;
+                color: #fff;
                 text-shadow: 3px 11px 15px rgba(52, 46, 46, 0.25);
                 font-style: normal;
                 font-weight: 500;
@@ -53,6 +52,12 @@
 
 .__title {
     color: color(primary);
+    line-height: 52px;
+}
+
+.__content-text {
+    color: #000;
+    padding-top: 20px;
 }
 
 // ABOUT US STYLES 
@@ -67,14 +72,14 @@
 
             .shotgun-statement-container {
                 .__title {
-                    color:color(primary);
+                    color: color(primary);
                     line-height: 1.2;
                 }
             }
 
             article {
-                h3 { 
-                    color:#000;
+                h3 {
+                    color: #000;
                     line-height: 1.5;
                     font-weight: normal;
                     padding-top: 0px;
@@ -93,7 +98,7 @@
             article {
                 .__title {
                     padding: 0 0 20px 0;
-                    color:color(primary);
+                    color: color(primary);
                 }
 
                 .__content-text {
@@ -245,6 +250,7 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+
     &:before {
         content: "";
         background: linear-gradient(290.74deg, #12CBC4 11.01%, #933985 90.64%);
@@ -258,14 +264,16 @@
         left: 0;
         position: absolute;
     }
+
     .__container {
         position: relative;
         z-index: 1;
+
         article {
             .__title {
-                color:#fff;
+                color: #fff;
             }
-    
+
             h6 {
                 font-style: normal;
                 font-weight: normal;
@@ -274,14 +282,12 @@
                 font-family: font(secondary);
 
             }
-    
+
             div {
                 padding-top: 35px;
             }
         }
     }
-
-
 }
 
 // Download links styles
@@ -396,13 +402,14 @@
             grid-template-columns: auto auto;
             gap: 80px;
 
-            .section__title {
-                font-style: normal;
-                font-weight: bold;
-                font-size: 40px;
-                line-height: 50px;
-                color: map-get($colors, primary);
-                padding-bottom: 20px;
+            article {
+                div {
+                    padding-top: 20px;
+
+                    .__content-text {
+                        color: #000;
+                    }
+                }
             }
         }
 
@@ -459,6 +466,15 @@
     padding: 0 0 50px;
 
     .__container {
+        header {
+            article {
+                .__content-text {
+                    color: #000;
+                    padding-top: 20px;
+                }
+            }
+        }
+
         .supported-service-list {
             padding-top: 30px;
             display: grid;
@@ -473,17 +489,16 @@
 
                 h6,
                 a {
-                    font-weight: bold;
-                    font-size: 25px;
-                    color: color(primary);
+                    font-weight: normal;
+                    color: #000;
                     font-family: font(main);
                 }
 
                 a {
                     text-decoration: underline;
 
-                    &:hover {
-                        color: color(primary-hover);
+                    transition: 0.5s &:hover {
+                        color: color(primary);
                     }
                 }
             }
@@ -619,6 +634,7 @@
                 .product-description {
                     font-size: 20px;
                     color: #fff;
+                    padding: 20px 0;
                 }
 
 
@@ -668,14 +684,19 @@
 
 // LOW RISK SOLUTIONS
 .lowRisk {
-    .__container {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 80px;
-    }
+    section {
+        padding: 80px 0;
 
-    .content-two {
-        padding: 40px 0;
+        .__container {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 80px;
+
+        }
+
+        .content-two {
+            padding: 40px 0;
+        }
     }
 }
 
@@ -702,10 +723,7 @@
             }
 
             .cbd-list-item {
-                h3 {
-                    color: map-get($colors, primary);
-                    font-size: 30px;
-                    font-weight: 700;
+                .__title {
                     padding-bottom: 20px;
                 }
             }
@@ -742,14 +760,13 @@
 
         .__container {
 
-
             .shortTerm__process {
                 header {
-                    h2 {
-                        font-weight: 800;
+                    .__title {
+                        font-weight: normal;
                         font-size: 40px;
                         padding: 40px 0 60px;
-                        text-transform: uppercase;
+                        font-weight: 600;
                     }
                 }
 
@@ -759,20 +776,18 @@
                     gap: 50px;
 
                     .process-item {
-                        text-align: center;
-
                         h3 {
                             padding-bottom: 20px;
                             color: map-get($colors, primary);
                             font-size: 30px;
-                            font-weight: bold;
-                            text-transform: uppercase;
+                            font-weight: normal;
                         }
 
                         article {
                             .__content-text {
                                 font-size: 20px;
                                 line-height: 2;
+                                text-align: left;
                             }
                         }
                     }
@@ -808,7 +823,7 @@
                 h1,
                 h2 {
                     font-style: normal;
-                    font-weight: bold;
+                    font-weight: normal;
                     font-size: 46px;
                     line-height: 56px;
                     color: #fff;
@@ -821,12 +836,7 @@
 
                 div {
                     display: inline-block;
-
-                    .button__standard {
-                        font-weight: bold;
-                        background: map-get($colors, primary);
-                        color: #fff;
-                    }
+                    margin-top: 40px;
                 }
             }
         }
@@ -839,6 +849,10 @@
             header {
                 text-align: center;
                 padding: 0px 0 20px;
+
+                h3 {
+                    padding-bottom: 50px;
+                }
             }
 
             article {
@@ -862,7 +876,7 @@
 
                         h6 {
                             font-size: 30px;
-                            font-weight: 600;
+                            font-weight: 400;
                             color: color(primary);
                         }
                     }
@@ -877,10 +891,16 @@
 .button__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    .button__standard {
-        &:last-child {
-            justify-self: end;
+    gap: 20px;
+    .btn-inner-container {
+        display: block;
+        &:first-child { 
+            justify-self: start !important;            
+        }
+        .button-standard {
+            &:last-child {
+                justify-self: end;
+            }
         }
     }
 }
