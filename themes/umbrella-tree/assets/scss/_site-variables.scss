@@ -4,8 +4,6 @@ $colors: (primary: #802151,
     c-title: #656565,
     hover:linear-gradient(90deg, rgba(147, 57, 133, 1), rgba(232, 206, 72, 1)),
     hover-off:linear-gradient(90deg, rgba(147, 57, 133, 0), rgba(232, 206, 72, 0)),
-
-
 );
 
 $fonts: (main: 'Poppins',
@@ -14,15 +12,11 @@ $fonts: (main: 'Poppins',
 
 @function color($color-name) {
     @return map-get($colors, $color-name)
-}
-
-;
+};
 
 @function font($font-name) {
     @return map-get($fonts, $font-name)
-}
-
-;
+};
 
 
 
